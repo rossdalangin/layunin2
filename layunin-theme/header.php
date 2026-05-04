@@ -103,10 +103,10 @@
             <div class="d-flex justify-content-between align-items-center mb-phi-l">
                 <div class="mobile-logo">
                     <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
-                        <span class="h3 fw-bold text-white mb-0"><?php bloginfo( 'name' ); ?></span>
+                        <span class="h3 fw-bold text-navy mb-0"><?php bloginfo( 'name' ); ?></span>
                     <?php endif; ?>
                 </div>
-                <button class="mobile-close btn text-white p-0 fs-1"><i class="fas fa-times"></i></button>
+                <button class="mobile-close btn text-navy p-0 fs-1"><i class="fas fa-times"></i></button>
             </div>
 
             <div class="mobile-nav-wrapper mb-phi-l">
@@ -120,17 +120,17 @@
             </div>
 
             <!-- Featured Product in Mobile Menu -->
-            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10">
                 <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Featured Asset</span>
-                <h4 class="text-white fw-bold mb-2">The Elite Goal Architect</h4>
-                <p class="text-white-50 small mb-3">Master the definitive framework for multi-year success and daily alignment.</p>
-                <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">Get Instant Access</a>
+                <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
+                <p class="text-muted small mb-3">Master the definitive framework for multi-year success and daily alignment.</p>
+                <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-outline-navy btn-sm w-100 fw-bold py-2">Get Instant Access</a>
             </div>
 
             <div class="mobile-actions mt-auto">
                 <a href="<?php echo esc_url( get_theme_mod('header_cta_link', home_url('/contact/')) ); ?>" class="btn btn-gold w-100 mb-phi-s"><?php echo esc_html(get_theme_mod('header_cta_text', 'Join the Elite Community')); ?></a>
 
-                <div class="mobile-contact text-center text-white-50 mt-phi">
+                <div class="mobile-contact text-center text-muted mt-phi">
                     <p class="small mb-1"><?php echo esc_html(get_theme_mod('contact_email', 'elite@layunin.com')); ?></p>
                     <div class="d-flex justify-content-center gap-3 mt-3">
                         <?php
@@ -138,7 +138,7 @@
                         foreach ( $socials as $social ) :
                             $link = get_theme_mod( "social_{$social}", '#' );
                             if ( $link && $link !== '#' ) : ?>
-                                <a href="<?php echo esc_url( $link ); ?>" class="text-white-50 fs-4"><i class="fab fa-<?php echo $social; ?>"></i></a>
+                                    <a href="<?php echo esc_url( $link ); ?>" class="text-muted fs-4"><i class="fab fa-<?php echo $social; ?>"></i></a>
                             <?php endif;
                         endforeach; ?>
                     </div>
