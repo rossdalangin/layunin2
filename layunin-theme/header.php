@@ -120,11 +120,12 @@
             </div>
 
             <!-- Featured Product in Mobile Menu -->
-            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10">
-                <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Featured Asset</span>
+            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative overflow-hidden">
+                <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
+                <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
                 <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
-                <p class="text-muted small mb-3">Master the definitive framework for multi-year success and daily alignment.</p>
-                <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-outline-navy btn-sm w-100 fw-bold py-2">Get Instant Access</a>
+                <p class="text-muted small mb-3">The definitive framework for multi-year success, deep-work alignment, and rapid scaling.</p>
+                <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
 
             <div class="mobile-actions mt-auto">

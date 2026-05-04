@@ -296,13 +296,18 @@ body.dark-mode .btn-outline-navy:hover {
 section { padding: var(--space-xl) 0; }
 
 .hero-section {
-    padding-top: var(--space-phi-m) !important;
-    padding-bottom: var(--space-phi-m) !important;
+    padding-top: var(--space-phi-s) !important;
+    padding-bottom: var(--space-phi-s) !important;
     min-height: auto !important;
 }
 
+.hero-section .hero-bg-accent {
+    opacity: 0.5;
+}
+
 .hero-section .display-1 {
-    margin-bottom: var(--space-phi-s) !important;
+    margin-bottom: var(--space-phi-xs) !important;
+    letter-spacing: -0.04em !important;
 }
 
 .hero-section .lead {
@@ -310,8 +315,8 @@ section { padding: var(--space-xl) 0; }
 }
 
 .hero-section .hero-trust {
-    margin-top: var(--space-phi-s) !important;
-    padding-top: var(--space-phi-s) !important;
+    margin-top: var(--space-phi-xs) !important;
+    padding-top: var(--space-phi-xs) !important;
 }
 .bg-white { background-color: var(--white) !important; }
 .bg-light { background-color: var(--bg-light) !important; }
