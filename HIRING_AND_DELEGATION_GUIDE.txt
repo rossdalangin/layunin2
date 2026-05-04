@@ -1,0 +1,26 @@
+🏛️ HIRING & DELEGATION GUIDE (V2.0 PREMIUM)
+SCALING WITH ELITE REMOTE TALENT
+
+### 1. THE DELEGATION AUDIT
+Before hiring, you must identify your "Friction Zone."
+- **Task Mapping:** Use the Revenue Tracker to identify tasks that earn <₱500/hr. These are your first candidates for delegation.
+- **The Protocol:** Never hire to "Fix a mess." Hire to "Run a system." 
+- **Rule:** If you can't write a 1-page protocol for a task, you aren't ready to hire for it.
+
+### 2. THE "ELITE" CANDIDATE FILTER
+- **Sourcing:** Use OnlineJobs.ph or LinkedIn.
+- **The Filter:** In your job post, include a "Hidden Requirement" (e.g., "Start your application with the word 'Architect'"). This filters out 90% of applicants who don't read the details.
+- **The Test:** Give a 30-minute paid test task. Measure **Accuracy** and **Initiative**, not just speed.
+
+### 3. THE ONBOARDING PIPELINE
+1. **Access:** Add them to your Slack/Discord.
+2. **Architecture:** Grant "View-Only" access to the Blueprint Index.
+3. **Alignment:** Set their first "12-Word Mission" for their specific role.
+
+### 4. MANAGEMENT BY EXCEPTION
+- Stop micromanaging. 
+- **Protocol:** "I only need to know if the system fails or if a KPI is missed." 
+- **Tool:** Use a shared Trello or Notion board for asynchronous velocity tracking.
+
+---
+*True scaling is the art of replacing yourself with systems and people.*

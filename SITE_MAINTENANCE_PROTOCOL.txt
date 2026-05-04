@@ -1,0 +1,22 @@
+🏛️ SITE MAINTENANCE PROTOCOL (V2.0 PREMIUM)
+PERPETUAL PERFORMANCE & SECURITY GUIDELINES
+
+### 1. PERFORMANCE HYGIENE
+- **Image Optimization:** 100% of images must be passed through a compressor (ShortPixel/TinyPNG) before upload. Goal: All images <200kb.
+- **Cache Protocol:** Ensure a caching plugin (WP Rocket/LiteSpeed) is active. Clear cache only after major Customizer updates.
+- **Database:** Once a month, "Optimize Tables" via your hosting panel or a plugin to remove overhead.
+
+### 2. SECURITY SCANNING
+- **Updates:** Update WordPress Core, Themes, and Plugins every Monday morning.
+- **Monitoring:** Use Wordfence or Sucuri (Free versions are enough for initiation) to monitor login attempts.
+- **Login Shield:** Change your `/wp-admin` slug to a custom string to prevent 99% of brute-force attacks.
+
+### 3. CONTENT FRESHNESS
+- **Link Audit:** Once a quarter, use a "Broken Link Checker" to ensure all Affiliate Banners and Shop links are live.
+- **Update Cycle:** Refresh the "Social Proof" section on the homepage every 6 months with your latest Wall of Impact stories.
+
+### 4. CORE FILE PROTECTION
+- **The Rule:** Never edit `functions.php` or `customizer.php` directly on the live site. Use a staging environment or the Local development tool first.
+
+---
+*Technical excellence is the foundation of digital authority.*

@@ -1,0 +1,26 @@
+🏛️ GUTENBERG BLOCK MASTERCLASS (V2.0 PREMIUM)
+CONSISTENT "MASTERPIECE" STYLING FOR EVERY PAGE
+
+### 1. THE LAYUNIN COLOR VARIABLE SYSTEM
+Don't use hardcoded HEX codes in blocks. Use the theme defaults:
+- **Navy:** Main headings and high-authority blocks.
+- **Gold:** Accents, icons, and primary buttons.
+- **Light Gold:** Subtle backgrounds for quote blocks.
+
+### 2. CORE BLOCK PROTOCOLS
+- **Column Master:** Use the 66/33 split for service descriptions. (Large text left, high-quality image right).
+- **Group Mastery:** Wrap your entire section in a "Group" block with a background color to create the high-contrast sectioning seen on the homepage.
+- **Spacer Standard:** Use precisely 50px of spacing between groups to maintain the Golden Ratio tactile feel.
+
+### 3. SHORTCODE INJECTION (THE ELITE TOOLS)
+- `[cta_box title="..." button_text="..." button_url="..."]` - Best used at the end of every informational page.
+- `[benefit_list]` - Use inside a 2-column layout to show "Why Choose Us."
+- `[faq_item question="..."]` - Essential for the bottom of Sales Pages to handle objections.
+
+### 4. THE "WYSIWYG" AUDIT
+- Check your page in **Customizer > Live Preview**. 
+- If the text looks too small, use the "Lead" class in the block settings.
+- Ensure all images have a "Rounded" style (16px) to match the global theme DNA.
+
+---
+*Style is a byproduct of perfectly executed systems.*

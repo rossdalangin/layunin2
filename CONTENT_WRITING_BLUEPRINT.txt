@@ -1,0 +1,34 @@
+🏛️ CONTENT WRITING BLUEPRINT (V2.0 PREMIUM)
+THE ARCHITECTURE OF A VIRAL PILLAR POST
+
+### 1. THE RCT-ENGINE HOOK (DISPLAY HEADING)
+- Must be a "Problem-Antidote" statement.
+- **Example:** *"The Infrastructure Friction keeping Filipino VAs under ₱50k (And the 3-Step Protocol to Double Your Rate)."*
+
+### 2. THE EMPATHY-BRIDGE (INTRO: 150 WORDS)
+- State the "Friction" clearly. 
+- "You are working 80 hours a week. You have the skills. But your systems are failing you."
+- SEO: Use your primary keyword once in the first 50 words.
+
+### 3. THE AUTOMATED OVERVIEW (TOC)
+- The Layunin theme automatically creates this. Use precisely three H2 tags and two H3 tags per H2 to ensure an elite hierarchy.
+
+### 4. THE MODULAR CORE (BODY)
+- **Rule of 3-4:** No paragraph should exceed 4 lines.
+- **Visual Breakers:** 
+  - Use a `[benefit_list]` for outcomes.
+  - Use a `[cta_box]` at the 50% mark for the Lead Magnet.
+  - Use an AI-generated image (1200x800) with the "Elite" prompt style.
+
+### 5. THE "LAYUNIN" CALL TO ACTION (CONCLUSION)
+- Don't just summarize. **Initiate.**
+- "Everything you just read is useless without execution. Click below to initiate your 7-Day Reset Protocol."
+
+### 🏛️ THE PREMIUM CHECKLIST
+- [ ] Primary keyword in URL slug.
+- [ ] 3-5 Internal links to other Pillars or Shop items.
+- [ ] "Table of Contents" title set to "Strategic Overview" in Customizer.
+- [ ] High-contrast "Elite" featured image assigned.
+
+---
+*Write for Impact. Architect for Search.*

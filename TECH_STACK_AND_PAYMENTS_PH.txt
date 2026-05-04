@@ -1,0 +1,24 @@
+🏛️ TECH STACK & PH PAYMENTS (V2.0 PREMIUM)
+THE PIPES THAT RUN THE EMPIRE
+
+### 1. THE PAYMENT INFRASTRUCTURE (PH MANDATORY)
+- **Primary:** GCash and Maya. Always include your QR codes in invoices.
+- **Secondary:** Bank Transfer (BDO/BPI/Unionbank). Unionbank is best for tech-integration.
+- **Global:** Stripe or PayPal (For international achievers). 
+
+### 2. THE CONTENT ENGINE
+- **Website:** WordPress + Layunin Theme (v9.8+).
+- **Hosting:** Hostinger or SiteGround (SG Servers recommended for PH speed).
+- **Email:** ConvertKit or MailerLite.
+
+### 3. THE OPERATIONS VAULT
+- **Project Mastery:** Notion (For internal blueprints) or Trello (For client velocity).
+- **Meetings:** Zoom or Google Meet.
+- **AI Workforce:** ChatGPT Plus (GPT-4o) + Perplexity AI.
+
+### 4. THE AUTOMATION GLUE
+- **Zapier:** To connect GCash (via email notifications) to your CRM and Course delivery.
+- **Make.com:** For more complex architectural workflows.
+
+---
+*The best tech is the one that removes the most friction.*

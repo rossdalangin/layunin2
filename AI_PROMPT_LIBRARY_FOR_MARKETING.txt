@@ -1,0 +1,20 @@
+🏛️ AI PROMPT LIBRARY FOR ELITE MARKETING (V2.0 PREMIUM)
+THE RCT-FORMULA POWER PACK
+
+### 1. PILLAR CONTENT ARCHITECT
+**Prompt:** "Act as a world-class SEO strategist. I am writing a pillar post about [TOPIC] for high-achieving Filipinos. Outline a 2,000-word guide using the 'Layunin Framework' (Audit, Systematize, Scale). Include 5 H2 headers that address specific friction points like internet speed, traffic, or burnout."
+
+### 2. VIRAL SOCIAL HOOK GENERATOR
+**Prompt:** "Act as a viral content architect. Analyze this text: [PASTE YOUR DRAFT]. Generate 10 contrarian hooks for LinkedIn. Focus on why 'standard advice' is failing Filipino professionals. Use a tone that is Elite, Precise, and Empathetic."
+
+### 3. THE EMAIL MASTER (CONVERSION)
+**Prompt:** "Act as a direct-response copywriter. Write a 3-part email sequence for someone who just downloaded the 'Elite 7-Day Protocol'. Part 1: Empathy for the Hustle Trap. Part 2: Introduce the North Star Mission. Part 3: Soft-pitch the 'Master Productivity Vault'. Keep sentences short and impact-heavy."
+
+### 4. AD CREATIVE STRATEGIST
+**Prompt:** "Act as a Meta Ads specialist. I am targeting Filipino Agency Owners with ₱100k+ income. Suggest 3 video ad scripts: 1) The 'Day in the life of friction' script. 2) The 'I automated my ops' script. 3) The 'Why I built Layunin' origin story."
+
+### 5. THE "HUMAN-POLISH" BOT
+**Prompt:** "Review the following AI-generated text. Strip away fluff words like 'comprehensive', 'tapestry', and 'unleash'. Inject specific PH-market context like GCash, BGC, or Taglish resonance. Ensure it sounds like a human Master Architect, not a machine."
+
+---
+*Architecture is the art of prompting with purpose.*
