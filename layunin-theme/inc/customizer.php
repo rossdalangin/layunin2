@@ -587,8 +587,8 @@ function layunin_customize_register( $wp_customize ) {
             $wp_customize->add_control( 'shop_content', array( 'label' => 'Shop Description', 'section' => "layunin_page_{$id}", 'type' => 'textarea' ) );
             $wp_customize->add_setting( 'shop_item_badge', array( 'default' => 'Digital Resource', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'shop_item_badge', array( 'label' => 'Product Label', 'section' => "layunin_page_{$id}" ) );
-            $wp_customize->add_setting( 'shop_btn_text', array( 'default' => 'Add to Cart', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
-            $wp_customize->add_control( 'shop_btn_text', array( 'label' => 'Add to Cart Button Text', 'section' => "layunin_page_{$id}" ) );
+            $wp_customize->add_setting( 'shop_btn_text', array( 'default' => 'Download Masterpiece', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
+            $wp_customize->add_control( 'shop_btn_text', array( 'label' => 'Download Button Text', 'section' => "layunin_page_{$id}" ) );
             $wp_customize->add_setting( 'shop_view_btn', array( 'default' => 'View Details', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'shop_view_btn', array( 'label' => 'View Details Button Text', 'section' => "layunin_page_{$id}" ) );
             
@@ -601,14 +601,48 @@ function layunin_customize_register( $wp_customize ) {
             $wp_customize->add_setting( 'shop_newsletter_btn', array( 'default' => 'Join Now', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'shop_newsletter_btn', array( 'label' => 'Newsletter Button Text', 'section' => "layunin_page_{$id}" ) );
 
+            $theme_uri = get_template_directory_uri();
+            $shop_products = array(
+                1 => array(
+                    'title' => 'The Elite Goal Architect',
+                    'price' => '&#8369;1,499',
+                    'link'  => $theme_uri . '/downloadables/1_ELITE_GOAL_ARCHITECT.docx'
+                ),
+                2 => array(
+                    'title' => 'AI Revenue Multiplication',
+                    'price' => '&#8369;2,999',
+                    'link'  => $theme_uri . '/downloadables/2_AI_REVENUE_MULTIPLICATION.docx'
+                ),
+                3 => array(
+                    'title' => 'Digital Asset Ecosystem',
+                    'price' => '&#8369;4,999',
+                    'link'  => $theme_uri . '/downloadables/3_DIGITAL_ASSET_ECOSYSTEM.docx'
+                ),
+                4 => array(
+                    'title' => 'The Elite Mindset Matrix',
+                    'price' => '&#8369;1,999',
+                    'link'  => $theme_uri . '/downloadables/4_THE_ELITE_MINDSET_MATRIX.docx'
+                ),
+                5 => array(
+                    'title' => 'Personal Brand Authority',
+                    'price' => '&#8369;3,499',
+                    'link'  => $theme_uri . '/downloadables/5_PERSONAL_BRAND_AUTHORITY.docx'
+                ),
+                6 => array(
+                    'title' => 'Wealth Architect Systems',
+                    'price' => '&#8369;5,999',
+                    'link'  => $theme_uri . '/downloadables/6_WEALTH_ARCHITECT_SYSTEMS.docx'
+                ),
+            );
+
             for($i = 1; $i <= 6; $i++) {
-                $wp_customize->add_setting( "shop_item_{$i}_title", array( 'default' => 'Elite Framework ' . $i, 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
+                $wp_customize->add_setting( "shop_item_{$i}_title", array( 'default' => $shop_products[$i]['title'], 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
                 $wp_customize->add_control( "shop_item_{$i}_title", array( 'label' => "Product $i Title", 'section' => "layunin_page_{$id}" ) );
-                $wp_customize->add_setting( "shop_item_{$i}_price", array( 'default' => '&#8369;2,499', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
+                $wp_customize->add_setting( "shop_item_{$i}_price", array( 'default' => $shop_products[$i]['price'], 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
                 $wp_customize->add_control( "shop_item_{$i}_price", array( 'label' => "Product $i Price", 'section' => "layunin_page_{$id}" ) );
                 $wp_customize->add_setting( "shop_item_{$i}_image", array( 'default' => 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400', 'sanitize_callback' => 'esc_url_raw' ) );
                 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, "shop_item_{$i}_image", array( 'label' => "Product $i Image", 'section' => "layunin_page_{$id}" ) ) );
-                $wp_customize->add_setting( "shop_item_{$i}_link", array( 'default' => '#', 'sanitize_callback' => 'esc_url_raw' ) );
+                $wp_customize->add_setting( "shop_item_{$i}_link", array( 'default' => $shop_products[$i]['link'], 'sanitize_callback' => 'esc_url_raw' ) );
                 $wp_customize->add_control( "shop_item_{$i}_link", array( 'label' => "Product $i Link", 'section' => "layunin_page_{$id}" ) );
             }
         }

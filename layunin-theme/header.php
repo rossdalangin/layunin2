@@ -118,6 +118,14 @@
                     ?>
                 </div>
 
+                <!-- Featured Product in Mobile Menu -->
+                <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+                    <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Featured Asset</span>
+                    <h4 class="text-white fw-bold mb-2">The Elite Goal Architect</h4>
+                    <p class="text-white-50 small mb-3">Master the definitive framework for multi-year success and daily alignment.</p>
+                    <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">Get Instant Access</a>
+                </div>
+
                 <div class="mobile-actions mt-auto">
                     <a href="<?php echo esc_url( get_theme_mod('header_cta_link', home_url('/contact/')) ); ?>" class="btn btn-gold w-100 mb-phi-s"><?php echo esc_html(get_theme_mod('header_cta_text', 'Join the Elite Community')); ?></a>
                     

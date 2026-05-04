@@ -196,6 +196,34 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
     font-weight: 800;
 }
 
+.mobile-overlay .mobile-nav li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mobile-overlay.active .mobile-nav li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-overlay.active .mobile-nav li:nth-child(1) { transition-delay: 0.1s; }
+.mobile-overlay.active .mobile-nav li:nth-child(2) { transition-delay: 0.15s; }
+.mobile-overlay.active .mobile-nav li:nth-child(3) { transition-delay: 0.2s; }
+.mobile-overlay.active .mobile-nav li:nth-child(4) { transition-delay: 0.25s; }
+.mobile-overlay.active .mobile-nav li:nth-child(5) { transition-delay: 0.3s; }
+
+.mobile-featured-product {
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+}
+
+.mobile-overlay.active .mobile-featured-product {
+    transform: scale(1);
+    opacity: 1;
+}
+
 /* Masterpiece Buttons */
 .btn {
     border-radius: var(--radius-md) !important;
@@ -747,8 +775,24 @@ body.dark-mode .reading-progress-container {
 }
 
 .resource-card:hover, .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 30px 60px -12px rgba(10, 25, 47, 0.15) !important;
+    transform: translateY(-15px);
+    box-shadow: 0 40px 80px -15px rgba(10, 25, 47, 0.2) !important;
+}
+
+.product-card .product-image img {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-card .item-title {
+    transition: color 0.3s ease;
+}
+
+.product-card:hover .item-title {
+    color: var(--gold) !important;
 }
 
 .resource-card .icon-box {

@@ -34,7 +34,7 @@ get_header(); ?>
 						<h3 class="h5 fw-bold text-navy mb-0 item-title"><?php echo esc_html($title); ?></h3>
 					</div>
 					<div class="card-footer bg-white border-0 p-4 pt-0">
-						<a href="<?php echo esc_url($link); ?>" class="btn btn-navy btn-sm w-100 py-2 shop-btn-text"><?php echo esc_html(get_theme_mod('shop_btn_text', 'Add to Cart')); ?> <i class="fas fa-shopping-cart ms-2"></i></a>
+						<a href="<?php echo esc_url($link); ?>" class="btn btn-navy btn-sm w-100 py-2 shop-btn-text" download><?php echo esc_html(get_theme_mod('shop_btn_text', 'Download Masterpiece')); ?> <i class="fas fa-download ms-2"></i></a>
 					</div>
 				</div>
 			</div>
