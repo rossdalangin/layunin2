@@ -120,7 +120,7 @@
             </div>
 
             <!-- Featured Product in Mobile Menu -->
-            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative overflow-hidden">
+            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative">
                 <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
                 <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
                 <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
