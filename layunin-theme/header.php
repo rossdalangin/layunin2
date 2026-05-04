@@ -180,4 +180,4 @@
         </div>
     <?php endif; ?>
 
-    <div class="header-spacer" style="height: <?php echo (get_theme_mod('show_announcement', true)) ? '140px' : '100px'; ?>;"></div>
+    <div class="header-spacer" style="height: <?php echo (get_theme_mod('show_announcement', true)) ? '110px' : '70px'; ?>;"></div>
