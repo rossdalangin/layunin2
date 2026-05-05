@@ -213,6 +213,7 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
     backdrop-filter: blur(10px);
     border: 1px solid rgba(5, 10, 24, 0.08) !important;
     box-shadow: 0 15px 35px rgba(5, 10, 24, 0.05);
+    animation: float 8s ease-in-out infinite;
 }
 
 .mobile-overlay.active .mobile-featured-product {
@@ -881,6 +882,8 @@ body.dark-mode .glass {
     background: rgba(10, 25, 47, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+
 
 
 .mobile-overlay {

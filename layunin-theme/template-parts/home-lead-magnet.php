@@ -1,8 +1,8 @@
-<section class="lead-magnet-section py-phi bg-white position-relative overflow-hidden">
+<section class="lead-magnet-section py-phi-l bg-white position-relative overflow-hidden border-top">
     <div class="bg-pattern position-absolute top-0 start-0 w-100 h-100 opacity-05" style="background-image: radial-gradient(var(--gold) 1px, transparent 1px); background-size: 30px 30px;"></div>
 
 	<div class="container position-relative z-index-1">
-		<div class="row align-items-center g-6">
+		<div class="row align-items-center g-phi">
 			<div class="col-lg-6 animate-up">
 				<h2 class="display-3 fw-black text-navy mb-phi-l"><?php echo esc_html( get_theme_mod( 'lm_title', 'The Elite 7-Day Goal Reset Protocol' ) ); ?></h2>
 				<p class="fs-5 text-muted mb-phi"><?php echo esc_html( get_theme_mod( 'lm_subtitle', 'Stop existing. Start executing. This is the exact audit used by top CEOs to reclaim 20+ hours per week.' ) ); ?></p>
