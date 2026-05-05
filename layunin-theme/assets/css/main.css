@@ -427,12 +427,12 @@ body.dark-mode .glass-morphism {
 }
 
 /* Golden Ratio Utilities */
-.py-phi { padding-top: var(--space-phi-m) !important; padding-bottom: var(--space-phi-m) !important; }
-.pb-phi { padding-bottom: var(--space-phi-m) !important; }
-.pt-phi { padding-top: var(--space-phi-m) !important; }
-.my-phi { margin-top: var(--space-phi-m) !important; margin-bottom: var(--space-phi-m) !important; }
-.mb-phi { margin-bottom: var(--space-phi-m) !important; }
-.mt-phi { margin-top: var(--space-phi-m) !important; }
+.py-phi { padding-top: var(--space-phi-xl) !important; padding-bottom: var(--space-phi-xl) !important; }
+.pb-phi { padding-bottom: var(--space-phi-xl) !important; }
+.pt-phi { padding-top: var(--space-phi-xl) !important; }
+.my-phi { margin-top: var(--space-phi-xl) !important; margin-bottom: var(--space-phi-xl) !important; }
+.mb-phi { margin-bottom: var(--space-phi-xl) !important; }
+.mt-phi { margin-top: var(--space-phi-xl) !important; }
 .py-phi-l { padding-top: var(--space-phi-l) !important; padding-bottom: var(--space-phi-l) !important; }
 .mb-phi-l { margin-bottom: var(--space-phi-l) !important; }
 .mb-phi-m { margin-bottom: var(--space-phi-m) !important; }

@@ -12,11 +12,21 @@ get_header(); ?>
 		</header>
 
 		<div class="row g-4">
-			<?php for($i = 1; $i <= 6; $i++) :
-				$title = get_theme_mod("shop_item_{$i}_title", 'Elite Framework ' . $i);
-				$price = get_theme_mod("shop_item_{$i}_price", '&#8369;2,499');
+			<?php
+			$theme_uri = get_template_directory_uri();
+			$prods = array(
+                1 => array('title' => 'The Elite Architect Manual', 'price' => '&#8369;1,499', 'link' => $theme_uri . '/downloadables/ebooks/THE_ELITE_ARCHITECT_MANUAL.md'),
+                2 => array('title' => 'AI Revenue Exponential', 'price' => '&#8369;2,999', 'link' => $theme_uri . '/downloadables/ebooks/AI_REVENUE_EXPONENTIAL.md'),
+                3 => array('title' => 'Digital Asset Empire', 'price' => '&#8369;4,999', 'link' => $theme_uri . '/downloadables/ebooks/DIGITAL_ASSET_EMPIRE.md'),
+                4 => array('title' => 'The Elite Mindset Matrix', 'price' => '&#8369;1,999', 'link' => $theme_uri . '/downloadables/ebooks/THE_ELITE_MINDSET_MATRIX.md'),
+                5 => array('title' => 'Wealth Architect Protocols', 'price' => '&#8369;3,499', 'link' => $theme_uri . '/downloadables/ebooks/WEALTH_ARCHITECT_PROTOCOLS.md'),
+                6 => array('title' => 'The Ultimate Productivity Vault', 'price' => '&#8369;5,999', 'link' => $theme_uri . '/downloadables/ebooks/THE_ULTIMATE_PRODUCTIVITY_VAULT.md')
+            );
+			for($i = 1; $i <= 6; $i++) :
+				$title = get_theme_mod("shop_item_{$i}_title", $prods[$i]['title']);
+				$price = get_theme_mod("shop_item_{$i}_price", $prods[$i]['price']);
 				$image = get_theme_mod("shop_item_{$i}_image", 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400');
-				$link = get_theme_mod("shop_item_{$i}_link", "#");
+				$link = get_theme_mod("shop_item_{$i}_link", $prods[$i]['link']);
 			?>
 			<div class="col-lg-4 col-md-6 animate-up product-item" style="animation-delay: <?php echo 0.05 * $i; ?>s;">
 				<div class="product-card card h-100 border-0 shadow-sm overflow-hidden transition-all hover-lift">

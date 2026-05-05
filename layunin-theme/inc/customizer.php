@@ -604,34 +604,34 @@ function layunin_customize_register( $wp_customize ) {
             $theme_uri = get_template_directory_uri();
             $shop_products = array(
                 1 => array(
-                    'title' => 'The Elite Goal Architect',
+                    'title' => 'The Elite Architect Manual',
                     'price' => '&#8369;1,499',
-                    'link'  => $theme_uri . '/downloadables/1_ELITE_GOAL_ARCHITECT.docx'
+                    'link'  => $theme_uri . '/downloadables/ebooks/THE_ELITE_ARCHITECT_MANUAL.md'
                 ),
                 2 => array(
-                    'title' => 'AI Revenue Multiplication',
+                    'title' => 'AI Revenue Exponential',
                     'price' => '&#8369;2,999',
-                    'link'  => $theme_uri . '/downloadables/2_AI_REVENUE_MULTIPLICATION.docx'
+                    'link'  => $theme_uri . '/downloadables/ebooks/AI_REVENUE_EXPONENTIAL.md'
                 ),
                 3 => array(
-                    'title' => 'Digital Asset Ecosystem',
+                    'title' => 'Digital Asset Empire',
                     'price' => '&#8369;4,999',
-                    'link'  => $theme_uri . '/downloadables/3_DIGITAL_ASSET_ECOSYSTEM.docx'
+                    'link'  => $theme_uri . '/downloadables/ebooks/DIGITAL_ASSET_EMPIRE.md'
                 ),
                 4 => array(
                     'title' => 'The Elite Mindset Matrix',
                     'price' => '&#8369;1,999',
-                    'link'  => $theme_uri . '/downloadables/4_THE_ELITE_MINDSET_MATRIX.docx'
+                    'link'  => $theme_uri . '/downloadables/ebooks/THE_ELITE_MINDSET_MATRIX.md'
                 ),
                 5 => array(
-                    'title' => 'Personal Brand Authority',
+                    'title' => 'Wealth Architect Protocols',
                     'price' => '&#8369;3,499',
-                    'link'  => $theme_uri . '/downloadables/5_PERSONAL_BRAND_AUTHORITY.docx'
+                    'link'  => $theme_uri . '/downloadables/ebooks/WEALTH_ARCHITECT_PROTOCOLS.md'
                 ),
                 6 => array(
-                    'title' => 'Wealth Architect Systems',
+                    'title' => 'The Ultimate Productivity Vault',
                     'price' => '&#8369;5,999',
-                    'link'  => $theme_uri . '/downloadables/6_WEALTH_ARCHITECT_SYSTEMS.docx'
+                    'link'  => $theme_uri . '/downloadables/ebooks/THE_ULTIMATE_PRODUCTIVITY_VAULT.md'
                 ),
             );
 
