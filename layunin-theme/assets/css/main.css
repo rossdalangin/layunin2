@@ -352,3 +352,40 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
     display: flex;
     align-items: center;
 }
+
+.tracking-widest { letter-spacing: 0.2em; }
+.mobile-mastery-meta .progress {
+    background-color: rgba(5, 10, 24, 0.05);
+    border-radius: 50px;
+}
+.elite-quote-box i { font-size: 1.2rem; opacity: 0.6; }
+
+/* Ultra-Exclusive Shop Effects */
+.product-card {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 40px 80px -15px rgba(5, 10, 24, 0.15);
+}
+
+.product-image img {
+    transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.shop-badge {
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.item-price {
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}

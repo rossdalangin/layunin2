@@ -155,34 +155,50 @@
                 </div>
             </div>
 
+
             <!-- Quick Access Strategy Grid -->
             <div class="mobile-strategy-grid mb-5">
                 <span class="text-uppercase small fw-bold text-muted letter-spacing-1 d-block mb-3">Mastery Pillars</span>
                 <div class="row g-2">
                     <div class="col-6">
                         <a href="/?s=AI" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
-                            <i class="fas fa-robot text-gold"></i> <span class="small fw-bold">AI Mastery</span>
+                            <i class="fas fa-robot text-gold"></i>
+                            <div>
+                                <span class="small fw-bold d-block">AI Mastery</span>
+                                <span class="x-small text-muted context-label" data-global="Global Trends" data-local="PH Workflows">Global Trends</span>
+                            </div>
                         </a>
                     </div>
                     <div class="col-6">
                         <a href="/?s=Income" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
-                            <i class="fas fa-wallet text-gold"></i> <span class="small fw-bold">Revenue</span>
+                            <i class="fas fa-wallet text-gold"></i>
+                            <div>
+                                <span class="small fw-bold d-block">Revenue</span>
+                                <span class="x-small text-muted context-label" data-global="USD Scaling" data-local="PH Outsourcing">USD Scaling</span>
+                            </div>
                         </a>
                     </div>
                     <div class="col-6">
                         <a href="/?s=Productivity" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
-                            <i class="fas fa-bolt text-gold"></i> <span class="small fw-bold">Output</span>
+                            <i class="fas fa-bolt text-gold"></i>
+                            <div>
+                                <span class="small fw-bold d-block">Output</span>
+                                <span class="x-small text-muted context-label" data-global="Deep Work" data-local="Energy Rituals">Deep Work</span>
+                            </div>
                         </a>
                     </div>
                     <div class="col-6">
                         <a href="/?s=Mindset" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
-                            <i class="fas fa-brain text-gold"></i> <span class="small fw-bold">Mindset</span>
+                            <i class="fas fa-brain text-gold"></i>
+                            <div>
+                                <span class="small fw-bold d-block">Mindset</span>
+                                <span class="x-small text-muted context-label" data-global="Stoicism" data-local="Purpose Alignment">Stoicism</span>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <!-- Featured Product in Mobile Menu -->
+    <!-- Featured Product in Mobile Menu -->
             <div class="mobile-featured-product mb-5 p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative overflow-hidden">
                 <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
                 <div class="position-relative z-1">
@@ -190,6 +206,21 @@
                     <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
                     <p class="text-muted small mb-3">The definitive framework for multi-year success and rapid scaling.</p>
                     <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+            <!-- Mastery Progress & Elite Quote -->
+            <div class="mobile-mastery-meta mb-5 p-4 rounded-4 bg-light border">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="x-small fw-bold text-muted text-uppercase tracking-widest">Your Mastery Level</span>
+                    <span class="badge bg-navy text-white x-small">Phase 1: Architect</span>
+                </div>
+                <div class="progress mb-4" style="height: 6px;">
+                    <div class="progress-bar bg-gold" style="width: 35%;"></div>
+                </div>
+                <div class="elite-quote-box border-top pt-4">
+                    <i class="fas fa-quote-left text-gold mb-2"></i>
+                    <p class="small fst-italic text-navy mb-0">"The Architect does not build for today; he architects for eternity."</p>
                 </div>
             </div>
 

@@ -60,16 +60,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
     // Context Switcher Logic
     const contextToggles = document.querySelectorAll('.context-toggle');
+    const contextLabels = document.querySelectorAll('.context-label');
+
     contextToggles.forEach(btn => {
         btn.addEventListener('click', function() {
             contextToggles.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
             const context = this.dataset.context;
+
+            // Update labels based on context
+            contextLabels.forEach(label => {
+                label.textContent = label.getAttribute('data-' + context);
+                label.style.opacity = '0';
+                setTimeout(() => {
+                    label.style.opacity = '1';
+                }, 100);
+            });
+
             console.log('Strategic context switched to:', context);
         });
     });
+
 
     // Search Overlay Logic
     const openSearch = (e) => {

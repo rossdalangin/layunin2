@@ -13,7 +13,7 @@
 				echo '</div>';
 
 				$older_label = get_theme_mod('archive_older_label', 'Previous Strategies');
-				$newer_label = get_theme_mod('archive_newer_label', 'Recent Strategics');
+				$newer_label = get_theme_mod('archive_newer_label', 'Recent Strategies');
 				the_posts_navigation( array(
 					'prev_text' => '<span class="archive-older-label">' . esc_html($older_label) . '</span>',
 					'next_text' => '<span class="archive-newer-label">' . esc_html($newer_label) . '</span>',

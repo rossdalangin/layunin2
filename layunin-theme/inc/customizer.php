@@ -408,7 +408,7 @@ function layunin_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'nav_next_label', array( 'label' => 'Post Nav Next Label', 'section' => 'layunin_blog_settings' ) );
     $wp_customize->add_setting( 'archive_older_label', array( 'default' => 'Previous Strategies', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'archive_older_label', array( 'label' => 'Pagination Older Label', 'section' => 'layunin_blog_settings' ) );
-    $wp_customize->add_setting( 'archive_newer_label', array( 'default' => 'Recent Strategics', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
+    $wp_customize->add_setting( 'archive_newer_label', array( 'default' => 'Recent Strategies', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'archive_newer_label', array( 'label' => 'Pagination Newer Label', 'section' => 'layunin_blog_settings' ) );
     $wp_customize->add_setting( 'blog_layout', array( 'default' => 'grid', 'sanitize_callback' => 'sanitize_text_field' ) );
 	$wp_customize->add_control( 'blog_layout', array( 'label' => 'Blog Layout', 'section' => 'layunin_blog_settings', 'type' => 'select', 'choices' => array('grid' => 'Grid', 'list' => 'List') ) );

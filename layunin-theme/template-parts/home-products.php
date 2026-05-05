@@ -7,7 +7,18 @@
 	<div class="container">
 		<div class="row g-4">
 			<?php 
-            $theme_uri = get_template_directory_uri();
+
+			$prod_specs = array(
+				1 => array("Purpose Audit", "Macro-to-Micro Engine", "Environment Design", "Network Architecture"),
+				2 => array("RCT Prompt Engineering", "AI Exoskeleton Stack", "Service Arbitrage", "Custom GPT Development"),
+				3 => array("Niche Matrix Analysis", "Automated Value Ladders", "Psychological Copywriting", "Omnipresence Marketing"),
+				4 => array("Radical Responsibility", "The Stoic Filter", "Pareto Decision Making", "The Flow State Protocol"),
+				5 => array("Empire Account Structure", "Asset Allocation Logic", "Tax & Entity Strategy", "Legacy Transmission"),
+				6 => array("Energy Mapping (BPE)", "The Distraction Shield", "Sunday Sprint Planning", "The Digital Sunset")
+			);
+
+
+			$theme_uri = get_template_directory_uri();
             $prods = array(
                 1 => array('title' => 'The Elite Architect Manual', 'price' => '&#8369;1,499', 'link' => $theme_uri . '/downloadables/1_THE_ELITE_ARCHITECT_MANUAL.docx'),
                 2 => array('title' => 'AI Revenue Exponential', 'price' => '&#8369;2,999', 'link' => $theme_uri . '/downloadables/2_AI_REVENUE_EXPONENTIAL.docx'),
@@ -17,6 +28,7 @@
                 6 => array('title' => 'The Ultimate Productivity Vault', 'price' => '&#8369;5,999', 'link' => $theme_uri . '/downloadables/6_THE_ULTIMATE_PRODUCTIVITY_VAULT.docx')
             );
 			for($i = 1; $i <= 6; $i++) :
+				$current_modules = $prod_specs[$i];
 				$title = get_theme_mod("shop_item_{$i}_title", $prods[$i]['title']);
 				$price = get_theme_mod("shop_item_{$i}_price", $prods[$i]['price']);
 				$image = get_theme_mod("shop_item_{$i}_image", 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400');
@@ -34,7 +46,9 @@
 						<div class="strategic-preview mb-4">
 							<ul class="list-unstyled small text-muted mb-0">
 								<li class="mb-2"><i class="fas fa-shield-alt text-gold me-2"></i> 8 Strategic Modules</li>
-								<li class="mb-2"><i class="fas fa-bolt text-gold me-2"></i> Elite Execution Steps</li>
+								<?php foreach(array_slice($current_modules, 0, 2) as $mod) : ?>
+								<li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> <?php echo esc_html($mod); ?></li>
+								<?php endforeach; ?>
 								<li><i class="fas fa-file-word text-gold me-2"></i> Masterpiece Doc Format</li>
 							</ul>
 						</div>
