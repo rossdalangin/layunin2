@@ -15,12 +15,12 @@ get_header(); ?>
 			<?php
 			$theme_uri = get_template_directory_uri();
 			$prods = array(
-                1 => array('title' => 'The Elite Architect Manual', 'price' => '&#8369;1,499', 'link' => $theme_uri . '/downloadables/ebooks/THE_ELITE_ARCHITECT_MANUAL.md'),
-                2 => array('title' => 'AI Revenue Exponential', 'price' => '&#8369;2,999', 'link' => $theme_uri . '/downloadables/ebooks/AI_REVENUE_EXPONENTIAL.md'),
-                3 => array('title' => 'Digital Asset Empire', 'price' => '&#8369;4,999', 'link' => $theme_uri . '/downloadables/ebooks/DIGITAL_ASSET_EMPIRE.md'),
-                4 => array('title' => 'The Elite Mindset Matrix', 'price' => '&#8369;1,999', 'link' => $theme_uri . '/downloadables/ebooks/THE_ELITE_MINDSET_MATRIX.md'),
-                5 => array('title' => 'Wealth Architect Protocols', 'price' => '&#8369;3,499', 'link' => $theme_uri . '/downloadables/ebooks/WEALTH_ARCHITECT_PROTOCOLS.md'),
-                6 => array('title' => 'The Ultimate Productivity Vault', 'price' => '&#8369;5,999', 'link' => $theme_uri . '/downloadables/ebooks/THE_ULTIMATE_PRODUCTIVITY_VAULT.md')
+                1 => array('title' => 'The Elite Architect Manual', 'price' => '&#8369;1,499', 'link' => $theme_uri . '/downloadables/1_THE_ELITE_ARCHITECT_MANUAL.docx'),
+                2 => array('title' => 'AI Revenue Exponential', 'price' => '&#8369;2,999', 'link' => $theme_uri . '/downloadables/2_AI_REVENUE_EXPONENTIAL.docx'),
+                3 => array('title' => 'Digital Asset Empire', 'price' => '&#8369;4,999', 'link' => $theme_uri . '/downloadables/3_DIGITAL_ASSET_EMPIRE.docx'),
+                4 => array('title' => 'The Elite Mindset Matrix', 'price' => '&#8369;1,999', 'link' => $theme_uri . '/downloadables/4_THE_ELITE_MINDSET_MATRIX.docx'),
+                5 => array('title' => 'Wealth Architect Protocols', 'price' => '&#8369;3,499', 'link' => $theme_uri . '/downloadables/5_WEALTH_ARCHITECT_PROTOCOLS.docx'),
+                6 => array('title' => 'The Ultimate Productivity Vault', 'price' => '&#8369;5,999', 'link' => $theme_uri . '/downloadables/6_THE_ULTIMATE_PRODUCTIVITY_VAULT.docx')
             );
 			for($i = 1; $i <= 6; $i++) :
 				$title = get_theme_mod("shop_item_{$i}_title", $prods[$i]['title']);

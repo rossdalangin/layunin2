@@ -606,32 +606,32 @@ function layunin_customize_register( $wp_customize ) {
                 1 => array(
                     'title' => 'The Elite Architect Manual',
                     'price' => '&#8369;1,499',
-                    'link'  => $theme_uri . '/downloadables/ebooks/THE_ELITE_ARCHITECT_MANUAL.md'
+                    'link'  => $theme_uri . '/downloadables/1_THE_ELITE_ARCHITECT_MANUAL.docx'
                 ),
                 2 => array(
                     'title' => 'AI Revenue Exponential',
                     'price' => '&#8369;2,999',
-                    'link'  => $theme_uri . '/downloadables/ebooks/AI_REVENUE_EXPONENTIAL.md'
+                    'link'  => $theme_uri . '/downloadables/2_AI_REVENUE_EXPONENTIAL.docx'
                 ),
                 3 => array(
                     'title' => 'Digital Asset Empire',
                     'price' => '&#8369;4,999',
-                    'link'  => $theme_uri . '/downloadables/ebooks/DIGITAL_ASSET_EMPIRE.md'
+                    'link'  => $theme_uri . '/downloadables/3_DIGITAL_ASSET_EMPIRE.docx'
                 ),
                 4 => array(
                     'title' => 'The Elite Mindset Matrix',
                     'price' => '&#8369;1,999',
-                    'link'  => $theme_uri . '/downloadables/ebooks/THE_ELITE_MINDSET_MATRIX.md'
+                    'link'  => $theme_uri . '/downloadables/4_THE_ELITE_MINDSET_MATRIX.docx'
                 ),
                 5 => array(
                     'title' => 'Wealth Architect Protocols',
                     'price' => '&#8369;3,499',
-                    'link'  => $theme_uri . '/downloadables/ebooks/WEALTH_ARCHITECT_PROTOCOLS.md'
+                    'link'  => $theme_uri . '/downloadables/5_WEALTH_ARCHITECT_PROTOCOLS.docx'
                 ),
                 6 => array(
                     'title' => 'The Ultimate Productivity Vault',
                     'price' => '&#8369;5,999',
-                    'link'  => $theme_uri . '/downloadables/ebooks/THE_ULTIMATE_PRODUCTIVITY_VAULT.md'
+                    'link'  => $theme_uri . '/downloadables/6_THE_ULTIMATE_PRODUCTIVITY_VAULT.docx'
                 ),
             );
 
