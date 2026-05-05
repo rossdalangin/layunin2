@@ -277,3 +277,55 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
     background: var(--gold);
     transition: width 0.1s ease;
 }
+
+/* Strategic Mobile Enhancements */
+.mobile-nav .nav-link {
+    transition: padding 0.3s ease, color 0.3s ease;
+    border-bottom: 1px solid rgba(5, 10, 24, 0.05);
+}
+
+.strategy-pill {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid transparent;
+}
+
+.strategy-pill:hover {
+    background: var(--white) !important;
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.mobile-search-wrapper .input-group {
+    transition: all 0.3s ease;
+}
+
+.mobile-search-wrapper .input-group:focus-within {
+    border-color: var(--gold) !important;
+    background: var(--white) !important;
+    box-shadow: 0 0 0 4px rgba(197, 160, 43, 0.1);
+}
+
+/* Sidebar Refinement */
+.sidebar-box {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.widget-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Reading Experience */
+.entry-content p {
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+}
+
+.entry-content h2 { margin-top: 4rem; margin-bottom: 2rem; }
+.entry-content h3 { margin-top: 3rem; margin-bottom: 1.5rem; }

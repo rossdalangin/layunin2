@@ -14,21 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
             const isActive = mobileOverlay.classList.toggle('active');
             document.body.style.overflow = isActive ? 'hidden' : '';
             
-            // Staggered animation for nav items
-            const navLinks = mobileOverlay.querySelectorAll('.mobile-nav .nav-link');
-            navLinks.forEach((link, index) => {
+            // Ultra-Premium Staggered animation
+            const animateElements = mobileOverlay.querySelectorAll('.mobile-search-wrapper, .mobile-nav-wrapper span, .mobile-nav li, .mobile-strategy-grid, .mobile-featured-product, .mobile-actions');
+            animateElements.forEach((el, index) => {
                 if (isActive) {
-                    link.style.opacity = '0';
-                    link.style.transform = 'translateY(20px)';
-                    link.style.transition = `all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) ${0.1 + (index * 0.05)}s`;
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(30px)';
+                    el.style.transition = `all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) ${0.05 * index}s`;
                     setTimeout(() => {
-                        link.style.opacity = '1';
-                        link.style.transform = 'translateY(0)';
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
                     }, 50);
                 } else {
-                    link.style.opacity = '';
-                    link.style.transform = '';
-                    link.style.transition = '';
+                    el.style.opacity = '';
+                    el.style.transform = '';
+                    el.style.transition = '';
                 }
             });
         }

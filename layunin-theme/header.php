@@ -112,8 +112,8 @@
     <!-- Mobile Overlay Menu -->
     <div id="mobile-overlay" class="mobile-overlay">
         <div class="mobile-overlay-bg"></div>
-        <div class="mobile-menu-inner container pt-5 pb-5">
-            <div class="d-flex justify-content-between align-items-center mb-phi-l">
+        <div class="mobile-menu-inner container pt-4 pb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
                 <div class="mobile-logo">
                     <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
                         <span class="h3 fw-bold text-navy mb-0"><?php bloginfo( 'name' ); ?></span>
@@ -122,7 +122,18 @@
                 <button class="mobile-close btn text-navy p-0 fs-1"><i class="fas fa-times"></i></button>
             </div>
 
-            <div class="mobile-nav-wrapper mb-phi-l">
+            <!-- Strategic Mobile Search -->
+            <div class="mobile-search-wrapper mb-4">
+                <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <div class="input-group bg-light rounded-pill px-3 py-1 border">
+                        <span class="input-group-text bg-transparent border-0 text-muted"><i class="fas fa-search"></i></span>
+                        <input type="search" class="form-control bg-transparent border-0 py-2 ps-0" placeholder="Search strategy..." value="<?php echo get_search_query(); ?>" name="s">
+                    </div>
+                </form>
+            </div>
+
+            <div class="mobile-nav-wrapper mb-4">
+                <span class="text-uppercase small fw-bold text-muted letter-spacing-1 d-block mb-3">Menu Navigation</span>
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'menu-1',
@@ -132,13 +143,42 @@
                 ?>
             </div>
 
+            <!-- Quick Access Strategy Grid -->
+            <div class="mobile-strategy-grid mb-5">
+                <span class="text-uppercase small fw-bold text-muted letter-spacing-1 d-block mb-3">Mastery Pillars</span>
+                <div class="row g-2">
+                    <div class="col-6">
+                        <a href="/?s=AI" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
+                            <i class="fas fa-robot text-gold"></i> <span class="small fw-bold">AI Mastery</span>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/?s=Income" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
+                            <i class="fas fa-wallet text-gold"></i> <span class="small fw-bold">Revenue</span>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/?s=Productivity" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
+                            <i class="fas fa-bolt text-gold"></i> <span class="small fw-bold">Output</span>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/?s=Mindset" class="strategy-pill d-flex align-items-center gap-2 p-3 rounded-3 bg-light text-decoration-none text-navy">
+                            <i class="fas fa-brain text-gold"></i> <span class="small fw-bold">Mindset</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Featured Product in Mobile Menu -->
-            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative">
+            <div class="mobile-featured-product mb-5 p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative overflow-hidden">
                 <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
-                <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
-                <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
-                <p class="text-muted small mb-3">The definitive framework for multi-year success, deep-work alignment, and rapid scaling.</p>
-                <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
+                <div class="position-relative z-1">
+                    <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
+                    <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
+                    <p class="text-muted small mb-3">The definitive framework for multi-year success and rapid scaling.</p>
+                    <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
             </div>
 
             <div class="mobile-actions mt-auto">

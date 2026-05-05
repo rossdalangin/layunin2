@@ -3,32 +3,54 @@
 
 ---
 
-### EXECUTIVE SUMMARY
-Wealth is not about what you make; it is about what you keep and how it grows. Move beyond budgeting into true financial architecture. Build the pipes that automate your generational wealth.
+### 💎 THE ARCHITECT'S PROMISE
+This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy. By the end of this guide, you will possess the precise protocols required to architect a life of absolute purpose, profit, and pure impact.
+
+### MODULE 1: The Empire Account Structure
+**Strategic Objective:** Automate generational wealth.
+
+Profit First system for the PH context.
+
+**Elite Execution Steps:**
+- [ ] Account setup
+- [ ] Auto-transfers
 
 ---
 
-### STRATEGIC MODULES
-1. **Beyond Simple Budgeting**: Budgeting is defensive; Architecture is offensive. Use the 'Profit First' model to ensure you pay your investments before any expense is touched. Building automated wealth pipes.
+### MODULE 2: Asset Allocation Logic
+**Strategic Objective:** Diversify for global growth.
 
-2. **The Empire Account Structure**: Automatically move 20% of all gross income into high-growth investment vehicles. Eliminate willpower from saving; wealth is built in the background of your life.
+Core-Satellite investment approach.
 
-3. **Multi-Tier Investment Strategy**: Core-Satellite approach. Core: Index funds and stable local assets. Satellite: Global equities, digital assets, and early-stage equity. Surviving PH inflation.
-
-4. **Defensive Architecture & Risk**: Black Swan planning. Protect your empire from currency crashes and economic volatility. Hedge your PH-based income with global currency exposure.
-
-5. **Strategic Entity Structuring**: Navigating the BIR landscape for global digital business. Structure your entities for maximum protection and minimum tax-drag on your growth capital.
-
-6. **Legacy & Generational Transmission**: Wealth is culture. Transmit the 'Elite Mindset' to the next generation. Trust structures, estate planning, and designing a legacy that outlasts you.
+**Elite Execution Steps:**
+- [ ] Map assets
+- [ ] Open global account
 
 ---
 
-### ELITE EXECUTION CHECKLIST
-- [ ] Separate business and personal accounts immediately.
-- [ ] Set up your automated 'Wealth Pipe' transfer.
-- [ ] Map your current asset allocation across markets.
-- [ ] Review your insurance for 'Black Swan' events.
-- [ ] Draft your 50-year 'Legacy Intent' statement.
+### MODULE 3: Tax & Entity Strategy
+**Strategic Objective:** Protect your capital.
+
+Navigating PH business law for nomads.
+
+**Elite Execution Steps:**
+- [ ] BIR audit
+- [ ] Entity setup
 
 ---
+
+### MODULE 4: Legacy Transmission
+**Strategic Objective:** Design your long-term impact.
+
+Estate planning and generational culture.
+
+**Elite Execution Steps:**
+- [ ] Legacy statement
+- [ ] Succession plan
+
+---
+
+### 🏛️ FINAL STRATEGIC AUDIT
+Your journey does not end here. The Architect is always refining the build site. Return to these protocols quarterly to ensure your 'Layunin' remains aligned with world-class execution.
+
 *© 2024 Layunin Elite Systems | Masterpiece Grade*
