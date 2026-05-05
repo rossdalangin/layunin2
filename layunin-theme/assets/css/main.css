@@ -91,7 +91,7 @@ body.dark-mode .lead, body.dark-mode p.lead { color: #E2E8F0 !important; }
     border-bottom: 1px solid var(--border-color);
     padding: 1.2rem 0;
     z-index: 2000;
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 body.dark-mode .site-header {
@@ -137,18 +137,7 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
 .menu-toggle:hover { background: var(--gold); }
 
 /* Premium Mobile Overlay */
-.mobile-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--white);
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+
 
 .mobile-overlay.active {
     opacity: 1;
@@ -174,20 +163,7 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
     padding-bottom: 5rem !important; /* Ensure bottom items aren't clipped */
 }
 
-.mobile-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--white);
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-}
+
 
 .mobile-nav .nav-link {
     font-size: 1.75rem;
@@ -450,12 +426,12 @@ body.dark-mode .glass-morphism {
 }
 
 /* Golden Ratio Utilities */
-.py-phi { padding-top: var(--space-phi-xl) !important; padding-bottom: var(--space-phi-xl) !important; }
-.pb-phi { padding-bottom: var(--space-phi-xl) !important; }
-.pt-phi { padding-top: var(--space-phi-xl) !important; }
-.my-phi { margin-top: var(--space-phi-xl) !important; margin-bottom: var(--space-phi-xl) !important; }
-.mb-phi { margin-bottom: var(--space-phi-xl) !important; }
-.mt-phi { margin-top: var(--space-phi-xl) !important; }
+.py-phi { padding-top: var(--space-phi-l) !important; padding-bottom: var(--space-phi-l) !important; }
+.pb-phi { padding-bottom: var(--space-phi-l) !important; }
+.pt-phi { padding-top: var(--space-phi-l) !important; }
+.my-phi { margin-top: var(--space-phi-l) !important; margin-bottom: var(--space-phi-l) !important; }
+.mb-phi { margin-bottom: var(--space-phi-l) !important; }
+.mt-phi { margin-top: var(--space-phi-l) !important; }
 .py-phi-l { padding-top: var(--space-phi-l) !important; padding-bottom: var(--space-phi-l) !important; }
 .mb-phi-l { margin-bottom: var(--space-phi-l) !important; }
 .mb-phi-m { margin-bottom: var(--space-phi-m) !important; }
@@ -904,4 +880,20 @@ body.dark-mode .author-box {
 body.dark-mode .glass {
     background: rgba(10, 25, 47, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
