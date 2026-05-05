@@ -329,3 +329,26 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
 
 .entry-content h2 { margin-top: 4rem; margin-bottom: 2rem; }
 .entry-content h3 { margin-top: 3rem; margin-bottom: 1.5rem; }
+
+.context-toggle {
+    border: none !important;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.context-toggle.active {
+    background: var(--white) !important;
+    color: var(--navy) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.mobile-context-switcher .bg-light {
+    background-color: rgba(5, 10, 24, 0.04) !important;
+}
+
+.x-small { font-size: 0.7rem; }
+.strategic-preview ul li {
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+}

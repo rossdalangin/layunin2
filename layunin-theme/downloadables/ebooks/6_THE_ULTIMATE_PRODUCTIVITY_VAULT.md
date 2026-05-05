@@ -1,56 +1,95 @@
-# 🏛️ THE_ULTIMATE_PRODUCTIVITY_VAULT
-## The Science of High-Output Execution and Energy Management
+# 🏛️ THE ULTIMATE PRODUCTIVITY VAULT
+## High-Output Science
 
 ---
 
 ### 💎 THE ARCHITECT'S PROMISE
-This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy. By the end of this guide, you will possess the precise protocols required to architect a life of absolute purpose, profit, and pure impact.
+This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy.
 
-### MODULE 1: Energy Mapping
-**Strategic Objective:** Align with your biology.
+### MODULE 1: Energy Map
+**Objective:** Peak Biology.
 
-BPE (Biological Peak Energy) windows.
+Green Hour protocol.
 
-**Elite Execution Steps:**
-- [ ] 7-day energy log
-- [ ] Green Hour schedule
-
----
-
-### MODULE 2: The Distraction Shield
-**Strategic Objective:** Protect your attention.
-
-Building a 'Clean Room' for focus.
-
-**Elite Execution Steps:**
-- [ ] Notification audit
-- [ ] Physical zone
+**Execution Steps:**
+- [ ] Energy log
+- [ ] Schedule
 
 ---
 
-### MODULE 3: Sunday Sprint Planning
-**Strategic Objective:** Win the week early.
+### MODULE 2: Shield
+**Objective:** Attention.
 
-Strategic audit of the next 7 days.
+Clean Room laboratory.
 
-**Elite Execution Steps:**
+**Execution Steps:**
+- [ ] Audit
+- [ ] Zone
+
+---
+
+### MODULE 3: Sprint Planning
+**Objective:** Win early.
+
+Sunday Strategic Audit.
+
+**Execution Steps:**
 - [ ] Sunday review
-- [ ] Daily Triple wins
+- [ ] Triple wins
 
 ---
 
-### MODULE 4: The Digital Sunset
-**Strategic Objective:** Engineer perfect recovery.
+### MODULE 4: Digital Sunset
+**Objective:** Recovery.
 
-Restoring your most valuable asset: focus.
+Focus restoration.
 
-**Elite Execution Steps:**
-- [ ] Sunset ritual
-- [ ] Input detox
+**Execution Steps:**
+- [ ] Ritual
+- [ ] Detox
 
 ---
 
-### 🏛️ FINAL STRATEGIC AUDIT
-Your journey does not end here. The Architect is always refining the build site. Return to these protocols quarterly to ensure your 'Layunin' remains aligned with world-class execution.
+### MODULE 5: Batching
+**Objective:** Momentum.
 
-*© 2024 Layunin Elite Systems | Masterpiece Grade*
+Advanced calendar logic.
+
+**Execution Steps:**
+- [ ] Theme days
+- [ ] Blocks
+
+---
+
+### MODULE 6: No-Meetings
+**Objective:** Flow.
+
+Asynch communication.
+
+**Execution Steps:**
+- [ ] Comm audit
+- [ ] SOP
+
+---
+
+### MODULE 7: Velocity Review
+**Objective:** Audit.
+
+Structuring reflection.
+
+**Execution Steps:**
+- [ ] Journal
+- [ ] Audit
+
+---
+
+### MODULE 8: Leverage Tools
+**Objective:** Leverage.
+
+Notion/AI workflows.
+
+**Execution Steps:**
+- [ ] Audit
+- [ ] Setup
+
+---

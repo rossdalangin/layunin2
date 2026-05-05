@@ -143,6 +143,18 @@
                 ?>
             </div>
 
+            <!-- Strategic Context Switcher -->
+            <div class="mobile-context-switcher mb-4">
+                <div class="bg-light p-1 rounded-3 d-flex border">
+                    <button class="btn btn-sm flex-fill fw-bold py-2 context-toggle active" data-context="global">
+                        <i class="fas fa-globe-americas me-2"></i> Global Mastery
+                    </button>
+                    <button class="btn btn-sm flex-fill fw-bold py-2 context-toggle" data-context="local">
+                        <i class="fas fa-map-marker-alt me-2"></i> PH Protocol
+                    </button>
+                </div>
+            </div>
+
             <!-- Quick Access Strategy Grid -->
             <div class="mobile-strategy-grid mb-5">
                 <span class="text-uppercase small fw-bold text-muted letter-spacing-1 d-block mb-3">Mastery Pillars</span>

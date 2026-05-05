@@ -1,56 +1,95 @@
 # 🏛️ WEALTH ARCHITECT PROTOCOLS
-## Advanced Financial Management for Modern High-Achievers
+## Advanced Management
 
 ---
 
 ### 💎 THE ARCHITECT'S PROMISE
-This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy. By the end of this guide, you will possess the precise protocols required to architect a life of absolute purpose, profit, and pure impact.
+This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy.
 
-### MODULE 1: The Empire Account Structure
-**Strategic Objective:** Automate generational wealth.
+### MODULE 1: Account Structure
+**Objective:** Auto-wealth.
 
-Profit First system for the PH context.
+Profit First adapted.
 
-**Elite Execution Steps:**
-- [ ] Account setup
-- [ ] Auto-transfers
-
----
-
-### MODULE 2: Asset Allocation Logic
-**Strategic Objective:** Diversify for global growth.
-
-Core-Satellite investment approach.
-
-**Elite Execution Steps:**
-- [ ] Map assets
-- [ ] Open global account
+**Execution Steps:**
+- [ ] Setup
+- [ ] Transfers
 
 ---
 
-### MODULE 3: Tax & Entity Strategy
-**Strategic Objective:** Protect your capital.
+### MODULE 2: Asset Logic
+**Objective:** Growth.
 
-Navigating PH business law for nomads.
+Core-Satellite approach.
 
-**Elite Execution Steps:**
-- [ ] BIR audit
-- [ ] Entity setup
-
----
-
-### MODULE 4: Legacy Transmission
-**Strategic Objective:** Design your long-term impact.
-
-Estate planning and generational culture.
-
-**Elite Execution Steps:**
-- [ ] Legacy statement
-- [ ] Succession plan
+**Execution Steps:**
+- [ ] Asset map
+- [ ] Global account
 
 ---
 
-### 🏛️ FINAL STRATEGIC AUDIT
-Your journey does not end here. The Architect is always refining the build site. Return to these protocols quarterly to ensure your 'Layunin' remains aligned with world-class execution.
+### MODULE 3: Tax Strategy
+**Objective:** Protection.
 
-*© 2024 Layunin Elite Systems | Masterpiece Grade*
+BIR and Global setups.
+
+**Execution Steps:**
+- [ ] Audit
+- [ ] Entity
+
+---
+
+### MODULE 4: Transmission
+**Objective:** Legacy.
+
+Estate planning.
+
+**Execution Steps:**
+- [ ] Statement
+- [ ] Succession
+
+---
+
+### MODULE 5: PH Real Estate
+**Objective:** Local assets.
+
+Income properties.
+
+**Execution Steps:**
+- [ ] Search
+- [ ] Financing
+
+---
+
+### MODULE 6: Crypto/Web3
+**Objective:** Exposure.
+
+Future economy risk.
+
+**Execution Steps:**
+- [ ] Wallet
+- [ ] Allocation
+
+---
+
+### MODULE 7: Passive Biz
+**Objective:** Cashflow.
+
+Acquisition mastery.
+
+**Execution Steps:**
+- [ ] Biz audit
+- [ ] Plan
+
+---
+
+### MODULE 8: Offshore
+**Objective:** Optimization.
+
+Strategic structures.
+
+**Execution Steps:**
+- [ ] Tax audit
+- [ ] Setup
+
+---

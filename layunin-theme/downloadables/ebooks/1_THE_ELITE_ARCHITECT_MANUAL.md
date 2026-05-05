@@ -1,56 +1,95 @@
 # 🏛️ THE ELITE ARCHITECT MANUAL
-## The Definitive Framework for Life Re-Engineering and Global Excellence
+## The Definitive Framework for Life Re-Engineering
 
 ---
 
 ### 💎 THE ARCHITECT'S PROMISE
-This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy. By the end of this guide, you will possess the precise protocols required to architect a life of absolute purpose, profit, and pure impact.
+This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy.
 
-### MODULE 1: The Purpose Audit
-**Strategic Objective:** Reveal your core mission.
+### MODULE 1: Purpose Audit
+**Objective:** Reveal mission.
 
-The '5-Whys' deep-dive for Filipino high-achievers.
+Deep dive into internal drivers.
 
-**Elite Execution Steps:**
-- [ ] Draft mission
-- [ ] Map vision
+**Execution Steps:**
+- [ ] Mission draft
+- [ ] Vision map
 
 ---
 
-### MODULE 2: Macro-to-Micro Engine
-**Strategic Objective:** Convert vision into wins.
+### MODULE 2: Macro-to-Micro
+**Objective:** Daily wins.
 
-The Keystone Goal framework.
+90-day execution engine.
 
-**Elite Execution Steps:**
-- [ ] Select goal
+**Execution Steps:**
+- [ ] Goal selection
 - [ ] Weekly review
 
 ---
 
-### MODULE 3: Environment Design
-**Strategic Objective:** Engineer your surroundings.
+### MODULE 3: Environment
+**Objective:** Remove friction.
 
-Removing physical and digital friction.
+Digital and physical cleanup.
 
-**Elite Execution Steps:**
+**Execution Steps:**
 - [ ] Clean desk
-- [ ] Notification audit
+- [ ] Notifications off
 
 ---
 
-### MODULE 4: Network Architecture
-**Strategic Objective:** Curate your peer group.
+### MODULE 4: Networking
+**Objective:** Curate peers.
 
-How to attract high-value peers.
+Attract high-value mentors.
 
-**Elite Execution Steps:**
-- [ ] Contact 3 leaders
-- [ ] Join community
+**Execution Steps:**
+- [ ] Outreach plan
+- [ ] Association audit
 
 ---
 
-### 🏛️ FINAL STRATEGIC AUDIT
-Your journey does not end here. The Architect is always refining the build site. Return to these protocols quarterly to ensure your 'Layunin' remains aligned with world-class execution.
+### MODULE 5: Bio-Performance
+**Objective:** Brain hardware.
 
-*© 2024 Layunin Elite Systems | Masterpiece Grade*
+Sleep and nutrition protocols.
+
+**Execution Steps:**
+- [ ] Sleep floor
+- [ ] Hydration
+
+---
+
+### MODULE 6: Delegation
+**Objective:** Scale thru others.
+
+Hiring PH-based teams.
+
+**Execution Steps:**
+- [ ] SOP creation
+- [ ] VA hiring
+
+---
+
+### MODULE 7: Crisis Protocol
+**Objective:** Antifragility.
+
+Handling market volatility.
+
+**Execution Steps:**
+- [ ] Freedom fund
+- [ ] Stress audit
+
+---
+
+### MODULE 8: Legacy
+**Objective:** Design impact.
+
+Mentorship and contribution.
+
+**Execution Steps:**
+- [ ] Legacy stmt
+- [ ] Mentorship goal
+
+---

@@ -30,7 +30,14 @@
 						<div class="price-tag position-absolute top-0 end-0 bg-gold text-white px-4 py-2 m-3 rounded-pill fw-bold shadow-sm"><?php echo esc_html($price); ?></div>
 					</div>
 					<div class="card-body p-5">
-						<h3 class="h5 fw-bold text-navy mb-phi-l"><?php echo esc_html($title); ?></h3>
+						<h3 class="h5 fw-bold text-navy mb-3"><?php echo esc_html($title); ?></h3>
+						<div class="strategic-preview mb-4">
+							<ul class="list-unstyled small text-muted mb-0">
+								<li class="mb-2"><i class="fas fa-shield-alt text-gold me-2"></i> 8 Strategic Modules</li>
+								<li class="mb-2"><i class="fas fa-bolt text-gold me-2"></i> Elite Execution Steps</li>
+								<li><i class="fas fa-file-word text-gold me-2"></i> Masterpiece Doc Format</li>
+							</ul>
+						</div>
 						<a href="<?php echo esc_url($link); ?>" class="btn btn-outline-navy w-100 py-3 fw-bold products-btn-text" download><?php echo esc_html(get_theme_mod('products_btn_text', 'Download Masterpiece')); ?></a>
 					</div>
 				</div>

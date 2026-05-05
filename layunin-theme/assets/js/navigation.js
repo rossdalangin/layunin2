@@ -1,5 +1,5 @@
 /**
- * Layunin Masterpiece Navigation (v9.8)
+ * Layunin Masterpiece Navigation (v10.0)
  */
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = isActive ? 'hidden' : '';
             
             // Ultra-Premium Staggered animation
-            const animateElements = mobileOverlay.querySelectorAll('.mobile-search-wrapper, .mobile-nav-wrapper span, .mobile-nav li, .mobile-strategy-grid, .mobile-featured-product, .mobile-actions');
+            const animateElements = mobileOverlay.querySelectorAll('.mobile-search-wrapper, .mobile-context-switcher, .mobile-nav-wrapper span, .mobile-nav li, .mobile-strategy-grid, .mobile-featured-product, .mobile-actions');
             animateElements.forEach((el, index) => {
                 if (isActive) {
                     el.style.opacity = '0';
                     el.style.transform = 'translateY(30px)';
-                    el.style.transition = `all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) ${0.05 * index}s`;
+                    el.style.transition = 'all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) ' + (0.05 * index) + 's';
                     setTimeout(() => {
                         el.style.opacity = '1';
                         el.style.transform = 'translateY(0)';
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         toggleOverlay();
     });
+
     if (mobileClose) mobileClose.addEventListener('click', function(e) {
         e.preventDefault();
         toggleOverlay();
@@ -56,6 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     toggleOverlay();
                 }
             }
+        });
+    });
+
+    // Context Switcher Logic
+    const contextToggles = document.querySelectorAll('.context-toggle');
+    contextToggles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            contextToggles.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const context = this.dataset.context;
+            console.log('Strategic context switched to:', context);
         });
     });
 
@@ -96,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sticky Scroll & Reading Progress
     const progressBar = document.getElementById('reading-progress-bar');
-
     window.addEventListener('scroll', function() {
         if (siteHeader) {
             if (window.scrollY > 40) {
@@ -114,9 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Dark Mode persistence - REPAIRED
+    // Dark Mode
     const darkModeToggles = document.querySelectorAll('#dark-mode-toggle, #dark-mode-toggle-mobile');
-    
     const applyDarkMode = (isDark) => {
         if (isDark) {
             document.body.classList.add('dark-mode');
@@ -125,11 +135,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Initial load
     const savedMode = localStorage.getItem('layunin_elite_dark');
-    if (savedMode === 'true') {
-        applyDarkMode(true);
-    }
+    if (savedMode === 'true') applyDarkMode(true);
 
     darkModeToggles.forEach(btn => {
         btn.addEventListener('click', function(e) {
@@ -140,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // AOS - Intersection Observer
+    // AOS
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -148,10 +155,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
 
-    // Smooth Scroll for TOC
+    // Smooth Scroll
     document.querySelectorAll('.table-of-contents a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -161,11 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const headerOffset = 150;
                 const elementPosition = target.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
             }
         });
     });

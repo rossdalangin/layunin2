@@ -1,56 +1,95 @@
 # 🏛️ THE ELITE MINDSET MATRIX
-## Psychological Fortitude and Decision-Making Mastery
+## Decision Mastery
 
 ---
 
 ### 💎 THE ARCHITECT'S PROMISE
-This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy. By the end of this guide, you will possess the precise protocols required to architect a life of absolute purpose, profit, and pure impact.
+This is not a book. This is a blueprint. Every word in this document has been battle-tested in the trenches of the modern digital economy.
 
-### MODULE 1: Radical Responsibility
-**Strategic Objective:** Own 100% of results.
+### MODULE 1: Responsibility
+**Objective:** Power.
 
-Destroying the victim narrative.
+Eliminate victimhood.
 
-**Elite Execution Steps:**
+**Execution Steps:**
 - [ ] Failure audit
-- [ ] Responsibility plan
+- [ ] Plan
 
 ---
 
-### MODULE 2: The Stoic Filter
-**Strategic Objective:** Maintain absolute calm.
+### MODULE 2: Stoic Filter
+**Objective:** Calm.
 
-Techniques for managing volatility.
+Volatility management.
 
-**Elite Execution Steps:**
-- [ ] Visualize chaos
-- [ ] Calm ritual
+**Execution Steps:**
+- [ ] Visualization
+- [ ] Ritual
 
 ---
 
-### MODULE 3: Pareto Thinking
-**Strategic Objective:** Identify the critical 20%.
+### MODULE 3: Pareto Logic
+**Objective:** Critical 20%.
 
-Decision making for high-output leaders.
+Filtering the noise.
 
-**Elite Execution Steps:**
+**Execution Steps:**
 - [ ] Decision audit
-- [ ] Eliminate noise
+- [ ] No-list
 
 ---
 
-### MODULE 4: The Flow State Protocol
-**Strategic Objective:** Neuroscience of immersion.
+### MODULE 4: Flow State
+**Objective:** Immersion.
 
-Triggers for peak cognitive performance.
+Environmental triggers.
 
-**Elite Execution Steps:**
+**Execution Steps:**
 - [ ] Morning flow
 - [ ] Input audit
 
 ---
 
-### 🏛️ FINAL STRATEGIC AUDIT
-Your journey does not end here. The Architect is always refining the build site. Return to these protocols quarterly to ensure your 'Layunin' remains aligned with world-class execution.
+### MODULE 5: Authority
+**Objective:** Ownership.
 
-*© 2024 Layunin Elite Systems | Masterpiece Grade*
+Mindset of a leader.
+
+**Execution Steps:**
+- [ ] Authority plan
+- [ ] Kit
+
+---
+
+### MODULE 6: Negotiation
+**Objective:** Win deals.
+
+Psychology of influence.
+
+**Execution Steps:**
+- [ ] Prep ritual
+- [ ] Listening
+
+---
+
+### MODULE 7: EQ
+**Objective:** Stability.
+
+Team leadership pressure.
+
+**Execution Steps:**
+- [ ] EQ audit
+- [ ] Empathy
+
+---
+
+### MODULE 8: Infinite Game
+**Objective:** Century view.
+
+Legacy vs Quarters.
+
+**Execution Steps:**
+- [ ] Legacy goal
+- [ ] Vision
+
+---
