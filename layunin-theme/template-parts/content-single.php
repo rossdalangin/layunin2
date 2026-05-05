@@ -1,7 +1,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('animate-up'); ?>>
 	<header class="entry-header mb-phi text-center">
-		<div class="entry-meta text-accent text-uppercase fw-bold letter-spacing-1 mb-phi-s">
-			<?php the_category(' &bull; '); ?>
+		<div class="entry-meta mb-phi-s">
+			<?php
+			$categories = get_the_category();
+			if ( ! empty( $categories ) ) {
+				foreach( $categories as $category ) {
+					$cat_id = $category->slug;
+					echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge bg-cat-' . esc_attr( $cat_id ) . ' text-white text-uppercase px-3 py-2 rounded-pill me-1 small fw-bold text-decoration-none">' . esc_html( $category->name ) . '</a>';
+				}
+			}
+			?>
 		</div>
 		<?php the_title( '<h1 class="entry-title display-2 fw-bold mb-phi-l">', '</h1>' ); ?>
 		<div class="entry-meta text-muted mb-phi d-flex align-items-center justify-content-center gap-3">
@@ -25,9 +33,9 @@
 		?>
 	</div>
 
-	<footer class="entry-footer mt-phi pt-5 border-top">
+	<footer class="entry-footer mt-phi pt-phi border-top">
 		<?php if ( get_theme_mod( 'show_author_box', true ) ) : ?>
-		<div class="author-box d-md-flex align-items-center p-5 bg-white shadow-sm rounded-4 mb-phi border">
+		<div class="author-box d-md-flex align-items-center p-5 bg-light border-0 shadow-premium rounded-4 mb-phi">
 			<div class="author-avatar me-md-5 mb-phi-l mb-md-0 text-center">
 				<?php echo get_avatar( get_the_author_meta( 'ID' ), 120, '', '', array( 'class' => 'rounded-circle border border-4 border-light' ) ); ?>
 			</div>

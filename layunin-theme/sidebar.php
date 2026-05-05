@@ -1,6 +1,6 @@
 <aside id="secondary" class="widget-area">
-	<div class="sidebar-box p-4 card mb-phi text-center">
-		<h3 class="h6 text-uppercase fw-bold mb-phi-l sidebar-author-title"><?php echo esc_html(get_theme_mod('sidebar_author_title', 'About the Author')); ?></h3>
+	<div class="sidebar-box p-5 card mb-phi text-center border-0 shadow-premium">
+		<h3 class="h6 text-uppercase fw-bold mb-phi-l sidebar-author-title letter-spacing-1"><?php echo esc_html(get_theme_mod('sidebar_author_title', 'About the Author')); ?></h3>
         <?php 
         $author_img = get_theme_mod('sidebar_author_image', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300');
         ?>
@@ -14,8 +14,9 @@
 	</div>
 
 	<?php if(get_theme_mod('show_sidebar_newsletter', true)) : ?>
-	<div class="sidebar-box p-4 card mb-phi bg-navy text-white border-0">
-		<h3 class="h6 text-uppercase fw-bold text-accent mb-phi-s sidebar-newsletter-title"><?php echo esc_html(get_theme_mod('sidebar_newsletter_title', 'Elite Growth Protocol')); ?></h3>
+	<div class="sidebar-box p-5 card mb-phi bg-navy text-white border-0 shadow-premium position-relative overflow-hidden">
+        <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-bolt fa-4x"></i></div>
+		<h3 class="h6 text-uppercase fw-bold text-accent mb-phi-s sidebar-newsletter-title letter-spacing-1"><?php echo esc_html(get_theme_mod('sidebar_newsletter_title', 'Elite Growth Protocol')); ?></h3>
 		<p class="small opacity-75 mb-phi-l sidebar-newsletter-desc"><?php echo esc_html(get_theme_mod('sidebar_newsletter_desc', 'Architect your life and reclaim your purpose in just 7 days.')); ?></p>
 		<form class="sidebar-newsletter" action="<?php echo esc_url(get_theme_mod('newsletter_form_action')); ?>" method="POST">
 			<input type="email" name="EMAIL" class="form-control form-control-sm mb-phi-s bg-white text-navy" placeholder="<?php echo esc_attr(get_theme_mod('sidebar_newsletter_ph', 'Email Address')); ?>" required>
