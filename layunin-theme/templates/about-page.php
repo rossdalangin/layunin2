@@ -11,7 +11,7 @@ get_header(); ?>
             <p class="lead text-muted mx-auto fs-4" style="max-width: 800px;"><?php echo esc_html( get_theme_mod( 'about_lead', 'Layunin was built on a single, uncompromising principle: that every Filipino has the potential to achieve world-class excellence when equipped with the right systems.' ) ); ?></p>
 		</header>
 
-		<div class="row g-phi align-items-center mb-phi">
+		<div class="row g-phi align-items-center mb-phi-l">
             <div class="col-lg-6 animate-up">
                 <div class="entry-content fs-5 lh-lg">
                     <h2 class="display-6 fw-bold text-navy mb-phi-l about-mission-title"><?php echo esc_html(get_theme_mod('about_mission_title', 'Our Elite Mission')); ?></h2>

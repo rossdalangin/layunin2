@@ -45,7 +45,7 @@
         }
         .announcement-bar a { color: var(--gold); text-decoration: none; transition: all 0.3s ease; }
         .announcement-bar a:hover { color: #fff; }
-        .site-header { transition: all 0.3s ease; }
+        .site-header { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
         .site-header.scrolled { top: 0 !important; }
 	</style>
 </head>
@@ -107,14 +107,82 @@
 
 			</div>
 		</div>
+	</header>
 
+    <!-- Mobile Overlay Menu -->
+    <div id="mobile-overlay" class="mobile-overlay">
+        <div class="mobile-overlay-bg"></div>
+        <div class="mobile-menu-inner container pt-5 pb-5">
+            <div class="d-flex justify-content-between align-items-center mb-phi-l">
+                <div class="mobile-logo">
+                    <?php if ( has_custom_logo() ) : the_custom_logo(); else : ?>
+                        <span class="h3 fw-bold text-navy mb-0"><?php bloginfo( 'name' ); ?></span>
+                    <?php endif; ?>
+                </div>
+                <button class="mobile-close btn text-navy p-0 fs-1"><i class="fas fa-times"></i></button>
+            </div>
 
+            <div class="mobile-nav-wrapper mb-phi-l">
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'menu-1',
+                    'container'      => false,
+                    'menu_class'     => 'mobile-nav list-unstyled'
+                ) );
+                ?>
+            </div>
 
+            <!-- Featured Product in Mobile Menu -->
+            <div class="mobile-featured-product mb-phi-l p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative">
+                <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
+                <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
+                <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
+                <p class="text-muted small mb-3">The definitive framework for multi-year success, deep-work alignment, and rapid scaling.</p>
+                <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+
+            <div class="mobile-actions mt-auto">
+                <a href="<?php echo esc_url( get_theme_mod('header_cta_link', home_url('/contact/')) ); ?>" class="btn btn-gold w-100 mb-phi-s"><?php echo esc_html(get_theme_mod('header_cta_text', 'Join the Elite Community')); ?></a>
+
+                <div class="mobile-contact text-center text-muted mt-phi">
+                    <p class="small mb-1"><?php echo esc_html(get_theme_mod('contact_email', 'elite@layunin.com')); ?></p>
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <?php
+                        $socials = array( 'facebook', 'twitter', 'instagram', 'linkedin', 'youtube' );
+                        foreach ( $socials as $social ) :
+                            $link = get_theme_mod( "social_{$social}", '#' );
+                            if ( $link && $link !== '#' ) : ?>
+                                    <a href="<?php echo esc_url( $link ); ?>" class="text-muted fs-4"><i class="fab fa-<?php echo $social; ?>"></i></a>
+                            <?php endif;
+                        endforeach; ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
+    <!-- Full-screen Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-overlay-bg"></div>
+        <button id="search-close" class="btn text-white fs-1 position-absolute top-0 end-0 m-4"><i class="fas fa-times"></i></button>
+        <div class="search-container container h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="search-box-wrapper w-100" style="max-width: 800px;">
+                <h2 class="text-white display-4 fw-bold mb-phi-l text-center">Audit Our Strategy Library</h2>
+                <form role="search" method="get" class="search-form-overlay" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <div class="input-group input-group-lg border-bottom border-white border-opacity-25 pb-3">
+                        <input type="search" class="form-control bg-transparent border-0 text-white placeholder-white opacity-75 fs-2" placeholder="What are you pursuing?" value="<?php echo get_search_query(); ?>" name="s" id="search-input-overlay" autocomplete="off">
+                        <button class="btn btn-link text-white fs-2 p-0" type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </form>
+                <div class="popular-searches mt-phi text-center">
+                    <span class="text-white-50 small text-uppercase fw-bold letter-spacing-1 d-block mb-3">Priority Audit Areas:</span>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/?s=AI" class="badge rounded-pill bg-white bg-opacity-10 text-white px-3 py-2 text-decoration-none hover-lift">AI Tools</a>
+                        <a href="/?s=Income" class="badge rounded-pill bg-white bg-opacity-10 text-white px-3 py-2 text-decoration-none hover-lift">Online Income</a>
+                        <a href="/?s=Productivity" class="badge rounded-pill bg-white bg-opacity-10 text-white px-3 py-2 text-decoration-none hover-lift">Productivity</a>
+                        <a href="/?s=Mindset" class="badge rounded-pill bg-white bg-opacity-10 text-white px-3 py-2 text-decoration-none hover-lift">Elite Mindset</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

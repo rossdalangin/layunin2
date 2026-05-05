@@ -3,7 +3,7 @@
  * The template for displaying the footer (v9.8 Masterpiece)
  */
 ?>
-	<footer id="colophon" class="site-footer bg-navy text-white py-phi mt-auto">
+	<footer id="colophon" class="site-footer bg-navy text-white py-phi mt-auto border-top border-white border-opacity-5">
 		<div class="container">
 			<div class="row g-5">
 				<div class="col-lg-4">

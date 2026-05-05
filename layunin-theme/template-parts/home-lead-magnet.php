@@ -18,9 +18,9 @@
 					<?php endif; endforeach; ?>
 				</ul>
 
-				<form class="lead-magnet-form d-flex flex-column flex-sm-row gap-3" action="<?php echo esc_url(get_theme_mod('lead_magnet_form_action')); ?>" method="POST">
-					<input type="email" name="EMAIL" placeholder="<?php echo esc_attr(get_theme_mod('lm_newsletter_ph', 'Enter your business email')); ?>" class="form-control form-control-lg bg-light border-0 shadow-sm" style="min-width: 300px;" required>
-					<button type="submit" class="btn btn-gold btn-lg px-5 shadow-lg fw-bold lm-btn-text"><?php echo esc_html(get_theme_mod('lm_btn_text', 'Get the Protocol')); ?></button>
+				<form class="lead-magnet-form d-flex flex-column flex-sm-row gap-0" action="<?php echo esc_url(get_theme_mod('lead_magnet_form_action')); ?>" method="POST">
+					<input type="email" name="EMAIL" placeholder="<?php echo esc_attr(get_theme_mod('lm_newsletter_ph', 'Enter your business email')); ?>" class="form-control form-control-lg bg-light border-0 shadow-premium" style="min-width: 320px; border-radius: 20px 0 0 20px !important;" required>
+					<button type="submit" class="btn btn-gold btn-lg px-5 shadow-premium fw-black lm-btn-text" style="border-radius: 0 20px 20px 0 !important;"><?php echo esc_html(get_theme_mod('lm_btn_text', 'Get the Protocol')); ?></button>
 				</form>
 				<p class="small text-muted mt-phi-l lm-social-proof"><i class="fas fa-lock me-2 text-gold"></i> <?php echo esc_html(get_theme_mod('lm_social_proof', 'Join 25,000+ others pursuing their absolute mastery. Your data is 100% secure.')); ?></p>
 			</div>
