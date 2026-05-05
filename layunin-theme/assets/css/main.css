@@ -39,14 +39,14 @@ Version: 10.0
 }
 
 body.dark-mode {
-    --white: #050A18;
-    --bg-light: #02040A;
-    --bg-light-gold: color-mix(in srgb, var(--gold), transparent 98%);
-    --text-main: #E2E8F0;
+    --white: #0A1120;
+    --bg-light: #050A18;
+    --bg-light-gold: rgba(197, 160, 43, 0.05);
+    --text-main: #F1F5F9;
     --text-muted: #94A3B8;
-    --navy: #0A192F;
-    --navy-light: #112240;
-    --navy-dark: #010208;
+    --navy: #FFFFFF; /* Critical fix: Navy becomes White/Off-white in dark mode */
+    --navy-light: #1E293B;
+    --navy-dark: #020617;
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -388,4 +388,144 @@ body.dark-mode .nav-link { color: #E2E8F0 !important; }
 .item-price {
     font-size: 1.25rem;
     letter-spacing: -0.02em;
+}
+
+/* Accessibility & Mode Continuity */
+body.dark-mode .bg-white { background-color: var(--white) !important; }
+body.dark-mode .bg-light { background-color: var(--bg-light) !important; }
+body.dark-mode .card { background-color: var(--white); border-color: var(--border-color); }
+body.dark-mode .text-navy { color: var(--navy) !important; }
+body.dark-mode .text-muted { color: var(--text-muted) !important; }
+body.dark-mode .form-control { background-color: var(--bg-light); border-color: var(--border-color); color: var(--text-main); }
+body.dark-mode .form-control::placeholder { color: rgba(255, 255, 255, 0.3); }
+
+/* Fixes for specific elements mentioned in Audit */
+body.dark-mode .badge.bg-light { background-color: var(--navy-light) !important; color: var(--white) !important; }
+body.dark-mode .exclusive-badge { color: var(--navy-dark) !important; }
+body.dark-mode .post-navigation { background-color: var(--white) !important; }
+body.dark-mode .table-of-contents { background-color: var(--white) !important; }
+body.dark-mode .breadcrumb-item a { color: var(--gold); }
+body.dark-mode .reading-time i, body.dark-mode .posted-on i, body.dark-mode .author-vcard i { color: var(--gold); }
+
+/* Strategic Context Switcher Dark Mode */
+body.dark-mode .context-toggle.active { background: var(--navy-light) !important; color: var(--white) !important; }
+body.dark-mode .strategy-pill:hover { background: var(--navy-light) !important; border-color: var(--gold); }
+
+/* Interactive Elements Mode Fixes */
+body.dark-mode .btn-outline-navy {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+body.dark-mode .btn-outline-navy:hover {
+    background-color: var(--white);
+    color: var(--navy-dark);
+}
+
+body.dark-mode .price-tag {
+    color: var(--navy-dark) !important;
+}
+
+body.dark-mode .announcement-bar {
+    background: linear-gradient(90deg, var(--navy-dark) 0%, var(--navy-light) 50%, var(--navy-dark) 100%);
+}
+
+body.dark-mode .site-header {
+    background: rgba(10, 17, 32, 0.95);
+    border-color: rgba(255,255,255,0.05);
+}
+
+body.dark-mode .mobile-overlay {
+    background: var(--bg-light);
+}
+
+body.dark-mode .mobile-overlay-bg {
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--navy-dark) 100%);
+}
+
+body.dark-mode .mobile-logo .site-title a,
+body.dark-mode .mobile-logo span {
+    color: var(--white) !important;
+}
+
+/* Force High Contrast for Dark Mode Deep Blocks */
+body.dark-mode .final-cta-section {
+    background-color: var(--navy-dark) !important;
+}
+
+body.dark-mode .site-footer {
+    background-color: var(--navy-dark) !important;
+    border-top-color: rgba(255,255,255,0.03);
+}
+
+body.dark-mode .footer-newsletter-btn {
+    background-color: var(--gold) !important;
+    color: var(--navy-dark) !important;
+}
+
+body.dark-mode .bg-navy-light {
+    background-color: var(--navy-light) !important;
+}
+
+/* Fix for light background on some templates in dark mode */
+body.dark-mode .bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+/* Global Transitions */
+* {
+    transition: background-color 0.4s ease, border-color 0.4s ease, color 0.2s ease;
+}
+
+/* Specific resets for transitions that shouldn't be global or are too slow */
+.animate-up, .nav-link, .btn, .product-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Color Continuity Utilities */
+.bg-navy { background-color: var(--navy-dark) !important; }
+body.dark-mode .bg-navy { background-color: var(--navy-dark) !important; }
+
+/* Ensure text remains readable in dark blocks even in light mode */
+.bg-navy .text-white, .final-cta-section .text-white, .site-footer .text-white {
+    color: #FFFFFF !important;
+}
+
+.bg-navy .text-white-50, .final-cta-section .text-white-50, .site-footer .text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Fix for shop items list style in dark mode */
+body.dark-mode .strategic-preview ul li {
+    color: var(--text-muted);
+}
+
+body.dark-mode .strategic-preview ul li i {
+    color: var(--gold);
+}
+
+/* Final Button Contrast Fixes */
+body.dark-mode .btn-gold {
+    color: var(--navy-dark) !important;
+}
+
+body.dark-mode .btn-navy {
+    background-color: var(--white) !important;
+    color: var(--navy-dark) !important;
+}
+
+body.dark-mode .btn-navy:hover {
+    background-color: var(--gold) !important;
+}
+
+body.dark-mode .header-cta .btn-gold {
+    color: var(--navy-dark) !important;
+}
+
+/* Form input focus fix */
+body.dark-mode .form-control:focus {
+    background-color: var(--white);
+    color: #FFFFFF;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 4px rgba(197, 160, 43, 0.1);
 }
