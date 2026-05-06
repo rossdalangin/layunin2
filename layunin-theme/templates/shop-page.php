@@ -57,14 +57,19 @@ get_header(); ?>
 							<span class="text-accent fw-bold item-price"><?php echo $price; ?></span>
 						</div>
 						<h3 class="h5 fw-bold text-navy mb-3 item-title"><?php echo esc_html($title); ?></h3>
+
 						<div class="strategic-preview mb-4">
 							<span class="text-uppercase x-small fw-bold text-muted letter-spacing-1 d-block mb-2">Core Strategic Modules:</span>
 							<ul class="list-unstyled small text-muted mb-0">
-								<?php foreach($current_modules as $mod) : ?>
-								<li><i class="fas fa-check-circle text-gold me-2"></i> <?php echo esc_html($mod); ?></li>
+								<?php
+								$custom_mods = get_theme_mod("shop_item_{$i}_modules");
+								$display_mods = !empty($custom_mods) ? explode(',', $custom_mods) : $current_modules;
+								foreach($display_mods as $mod) : ?>
+								<li><i class="fas fa-check-circle text-gold me-2"></i> <?php echo esc_html(trim($mod)); ?></li>
 								<?php endforeach; ?>
 							</ul>
 						</div>
+
 					</div>
 					<div class="card-footer bg-white border-0 p-4 pt-0">
 						<a href="<?php echo esc_url($link); ?>" class="btn btn-navy btn-sm w-100 py-2 shop-btn-text" download><?php echo esc_html(get_theme_mod('shop_btn_text', 'Download Masterpiece')); ?> <i class="fas fa-download ms-2"></i></a>

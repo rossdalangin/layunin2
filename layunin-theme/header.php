@@ -31,20 +31,20 @@
         h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 { font-family: var(--heading-font); }
         .card, .btn, .form-control, .rounded-4 { border-radius: var(--border-radius) !important; }
         .announcement-bar {
-            background: linear-gradient(90deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);
-            color: #fff;
-            padding: 12px 0;
+            background: #050A18;
+            color: #FFFFFF !important;
+            padding: 10px 0;
             text-align: center;
             font-size: 0.85rem;
             font-weight: 700;
             position: relative;
-            z-index: 2001;
+            z-index: 2100;
             border-bottom: 1px solid rgba(255,255,255,0.05);
             letter-spacing: 0.05em;
             text-transform: uppercase;
         }
-        .announcement-bar a { color: var(--gold); text-decoration: none; transition: all 0.3s ease; }
-        .announcement-bar a:hover { color: #fff; }
+        .announcement-bar a { color: #C5A02B !important; text-decoration: none; }
+        .announcement-bar a:hover { color: #FFFFFF !important; }
         .site-header { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
         .site-header.scrolled { top: 0 !important; }
 	</style>
@@ -198,29 +198,15 @@
                     </div>
                 </div>
             </div>
-    <!-- Featured Product in Mobile Menu -->
-            <div class="mobile-featured-product mb-5 p-4 rounded-4 bg-navy bg-opacity-5 border border-navy border-opacity-10 position-relative overflow-hidden">
+
+            <!-- Featured Product in Mobile Menu -->
+            <div id="mobile-featured-card" class="mobile-featured-product mb-5 p-4 rounded-4 bg-light border position-relative overflow-hidden">
                 <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
                 <div class="position-relative z-1">
                     <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
-                    <h4 class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
-                    <p class="text-muted small mb-3">The definitive framework for multi-year success and rapid scaling.</p>
-                    <a href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Mastery Progress & Elite Quote -->
-            <div class="mobile-mastery-meta mb-5 p-4 rounded-4 bg-light border">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="x-small fw-bold text-muted text-uppercase tracking-widest">Your Mastery Level</span>
-                    <span class="badge bg-navy text-white x-small">Phase 1: Architect</span>
-                </div>
-                <div class="progress mb-4" style="height: 6px;">
-                    <div class="progress-bar bg-gold" style="width: 35%;"></div>
-                </div>
-                <div class="elite-quote-box border-top pt-4">
-                    <i class="fas fa-quote-left text-gold mb-2"></i>
-                    <p class="small fst-italic text-navy mb-0">"The Architect does not build for today; he architects for eternity."</p>
+                    <h4 id="featured-product-title" class="text-navy fw-bold mb-2">The Elite Goal Architect</h4>
+                    <p id="featured-product-desc" class="text-muted small mb-3">The definitive framework for multi-year success and rapid scaling.</p>
+                    <a id="featured-product-link" href="<?php echo esc_url(get_theme_mod('shop_item_1_link', '#')); ?>" class="btn btn-navy btn-sm w-100 fw-bold py-2">Secure Your Copy <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
