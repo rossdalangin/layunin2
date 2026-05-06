@@ -6,9 +6,9 @@
 	<?php wp_head(); ?>
 	<style>
 		:root {
-			--navy: <?php echo get_theme_mod( 'primary_color', '#050A18' ); ?>;
-			--gold: <?php echo get_theme_mod( 'accent_color', '#C5A02B' ); ?>;
-            --accent: var(--gold);
+			--navy-custom: <?php echo get_theme_mod( 'primary_color', '#050A18' ); ?>;
+			--gold-custom: <?php echo get_theme_mod( 'accent_color', '#C5A02B' ); ?>;
+            --accent: var(--gold-custom);
 			--logo-width: <?php echo get_theme_mod( 'logo_width', '200' ); ?>px;
             --border-radius: <?php echo get_theme_mod( 'border_radius', '16' ); ?>px;
             --body-font: '<?php echo get_theme_mod( 'body_font', 'Inter' ); ?>', sans-serif;
@@ -31,7 +31,7 @@
         h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 { font-family: var(--heading-font); }
         .card, .btn, .form-control, .rounded-4 { border-radius: var(--border-radius) !important; }
         .announcement-bar {
-            background: #050A18;
+            background: var(--navy-custom);
             color: #FFFFFF !important;
             padding: 10px 0;
             text-align: center;

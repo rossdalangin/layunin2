@@ -14,7 +14,7 @@
 	</div>
 
 	<?php if(get_theme_mod('show_sidebar_newsletter', true)) : ?>
-	<div class="sidebar-box p-5 card mb-phi bg-navy text-white border-0 shadow-premium position-relative overflow-hidden">
+	<div class="sidebar-box p-5 card mb-phi bg-deep text-white border-0 shadow-premium position-relative overflow-hidden">
         <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-bolt fa-4x"></i></div>
 		<h3 class="h6 text-uppercase fw-bold text-accent mb-phi-s sidebar-newsletter-title letter-spacing-1"><?php echo esc_html(get_theme_mod('sidebar_newsletter_title', 'Elite Growth Protocol')); ?></h3>
 		<p class="small opacity-75 mb-phi-l sidebar-newsletter-desc"><?php echo esc_html(get_theme_mod('sidebar_newsletter_desc', 'Architect your life and reclaim your purpose in just 7 days.')); ?></p>

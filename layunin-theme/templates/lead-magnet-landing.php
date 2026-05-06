@@ -67,7 +67,7 @@ get_header(); ?>
 	</div>
 </main>
 
-<section class="testimonial-bar bg-navy py-phi overflow-hidden">
+<section class="testimonial-bar bg-deep py-phi overflow-hidden">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-8">

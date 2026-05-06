@@ -85,9 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 150);
             });
 
+            const featuredLink = document.getElementById("featured-product-link");
             if(featuredTitle) {
                 featuredTitle.textContent = (ctx === 'global') ? "The Elite Goal Architect" : "PH Revenue Exponential";
                 featuredDesc.textContent = (ctx === 'global') ? "Multi-year success framework." : "Dominating the PH digital economy.";
+                if(featuredLink) featuredLink.href = (ctx === 'global') ? "#item1" : "#item2";
             }
 
             if(masteryBar) masteryBar.style.width = (ctx === 'global') ? "45%" : "75%";

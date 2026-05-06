@@ -64,7 +64,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="mt-phi p-5 bg-navy text-white rounded-4 text-center shadow-premium position-relative overflow-hidden">
+			<div class="mt-phi p-5 bg-deep text-white rounded-4 text-center shadow-premium position-relative overflow-hidden">
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-gold opacity-5" style="background: radial-gradient(circle at center, var(--gold) 0%, transparent 70%);"></div>
 				<h2 class="h3 fw-bold mb-phi-l text-white services-custom-title position-relative z-index-1"><?php echo esc_html(get_theme_mod('services_custom_title', 'Need a Custom Solution?')); ?></h2>
 				<p class="text-white-50 mb-phi-l mx-auto services-custom-desc position-relative z-index-1" style="max-width: 600px;"><?php echo esc_html(get_theme_mod('services_custom_desc', 'For large scale operations and international firms, we offer bespoke architectural consulting tailored to your specific mastery goals.')); ?></p>

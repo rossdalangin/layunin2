@@ -33,7 +33,7 @@ get_header(); ?>
                         ?>
                         <img src="<?php echo esc_url($visual); ?>" class="w-100 h-100 object-fit-cover" alt="Elite Strategy Team">
                     </div>
-                    <div class="floating-stat glass p-4 rounded-4 position-absolute top-0 start-0 m-4 animate-float shadow-lg">
+                    <div class="floating-stat glass p-4 rounded-4 shadow-lg border position-absolute top-0 start-0 m-4 animate-float shadow-lg">
                         <div class="h3 fw-bold text-navy mb-0 about-stat-number"><?php echo esc_html(get_theme_mod('about_stat_number', '25k+')); ?></div>
                         <div class="small text-muted fw-bold about-stat-text"><?php echo esc_html(get_theme_mod('about_stat_text', 'High Achievers')); ?></div>
                     </div>
