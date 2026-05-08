@@ -78,8 +78,8 @@ function layunin_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'hero_subheadline', array( 'default' => 'Bridging the gap between Filipino ambition and world-class execution.', 'sanitize_callback' => 'sanitize_textarea_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'hero_subheadline', array( 'label' => 'Sub-headline', 'section' => 'layunin_home_hero', 'type' => 'textarea' ) );
 
-	// Products Page
-	$wp_customize->add_section( 'layunin_page_shop', array( 'title' => 'Shop Page', 'priority' => 40 ) );
+	// --- 4. SHOP PAGE SETTINGS ---
+	$wp_customize->add_section( 'layunin_page_shop', array( 'title' => 'Shop Page Settings', 'priority' => 40 ) );
     for($i = 1; $i <= 6; $i++) {
         $wp_customize->add_setting( "shop_item_{$i}_title", array( 'default' => '', 'sanitize_callback' => 'sanitize_text_field' ) );
         $wp_customize->add_control( "shop_item_{$i}_title", array( 'label' => "Product $i Title", 'section' => "layunin_page_shop" ) );
@@ -89,6 +89,8 @@ function layunin_customize_register( $wp_customize ) {
         $wp_customize->add_control( "shop_item_{$i}_link", array( 'label' => "Product $i Link", 'section' => "layunin_page_shop" ) );
         $wp_customize->add_setting( "shop_item_{$i}_modules", array( 'default' => '', 'sanitize_callback' => 'sanitize_text_field' ) );
         $wp_customize->add_control( "shop_item_{$i}_modules", array( 'label' => "Product $i Modules (comma separated)", 'section' => "layunin_page_shop" ) );
+        $wp_customize->add_setting( "shop_item_{$i}_image", array( 'default' => '', 'sanitize_callback' => 'esc_url_raw' ) );
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, "shop_item_{$i}_image", array( 'label' => "Product $i Image", 'section' => "layunin_page_shop" ) ) );
     }
 
 	// Automation

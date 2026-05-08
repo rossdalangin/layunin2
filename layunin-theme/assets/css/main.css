@@ -1023,3 +1023,16 @@ body.dark-mode .mobile-close {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(197, 160, 43, 0.1);
 }
+/* --- VERSION 10.3 LEGIBILITY FIXES --- */
+.newsletter-form input.form-control {
+    color: #1E293B !important; /* Dark text for light mode */
+}
+body.dark-mode .newsletter-form input.form-control {
+    color: #FFFFFF !important; /* White text for dark mode */
+}
+.newsletter-form input.form-control::placeholder {
+    color: rgba(30, 41, 59, 0.5) !important;
+}
+body.dark-mode .newsletter-form input.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
