@@ -210,7 +210,22 @@
                 </div>
             </div>
 
-            <div class="mobile-actions mt-auto">
+
+            <!-- Mastery Progress Tracker -->
+            <div class="mobile-mastery-meta mb-4">
+                <div class="d-flex justify-content-between align-items-end mb-2">
+                    <span class="text-uppercase x-small fw-bold text-muted letter-spacing-1">Current Mastery Level</span>
+                    <span class="badge bg-gold text-navy">Phase 1: Initiation</span>
+                </div>
+                <div class="progress" style="height: 6px; background: rgba(0,0,0,0.05);">
+                    <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="elite-quote-box mb-5 p-3 border-start border-gold bg-light italic">
+                <p class="mb-0 small text-muted fst-italic">"Direction over velocity. Systems over hustle."</p>
+            </div>
+<div class="mobile-actions mt-auto">
                 <a href="<?php echo esc_url( get_theme_mod('header_cta_link', home_url('/contact/')) ); ?>" class="btn btn-gold w-100 mb-phi-s"><?php echo esc_html(get_theme_mod('header_cta_text', 'Join the Elite Community')); ?></a>
 
                 <div class="mobile-contact text-center text-muted mt-phi">

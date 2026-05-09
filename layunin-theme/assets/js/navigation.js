@@ -1,5 +1,5 @@
 /**
- * Layunin Masterpiece Navigation (v10.0)
+ * Layunin Masterpiece Navigation (v10.3)
  * Comprehensive Elite Interaction Engine
  */
 document.addEventListener('DOMContentLoaded', function() {
@@ -175,4 +175,32 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
+
+/**
+ * --- 8. EXIT INTENT PROTOCOL ---
+ * Triggers a strategic pause when the user intends to leave.
+ */
+let exitIntentTriggered = false;
+document.addEventListener('mouseleave', (e) => {
+    if (e.clientY < 0 && !exitIntentTriggered) {
+        const modal = document.getElementById('exit-intent-modal');
+        if (modal) {
+            modal.classList.add('active');
+            exitIntentTriggered = true;
+        }
+    }
+});
+
+/**
+ * --- 9. DYNAMIC MASTERY TRACKER ---
+ * Updates the UI based on user scroll or interactions.
+ */
+window.addEventListener('scroll', () => {
+    const masteryBar = document.querySelector('.mobile-mastery-meta .progress-bar');
+    if (masteryBar) {
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        // Logic: More reading = higher mastery
+        masteryBar.style.width = Math.min(scrollPercent, 100) + '%';
+    }
 });

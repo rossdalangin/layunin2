@@ -79,6 +79,21 @@
 			</div>
 		</div>
 	</footer>
+    <!-- Strategic Exit Intent Modal -->
+    <div id="exit-intent-modal" class="exit-intent-modal">
+        <div class="exit-intent-overlay" onclick="document.getElementById('exit-intent-modal').classList.remove('active')"></div>
+        <div class="exit-intent-content shadow-2xl">
+            <span class="badge bg-gold text-navy mb-3">Wait, Architect!</span>
+            <h2 class="fw-bold text-navy mb-3">Don't Leave Your Potential to Chance</h2>
+            <p class="text-muted mb-4">Secure our "Elite Productivity Vault" for free before you go. Join 25,000+ Filipino achievers.</p>
+            <form class="newsletter-form-modal mb-4">
+                <input type="email" class="form-control mb-3" placeholder="Enter your best email">
+                <button type="submit" class="btn btn-navy w-100 py-3 fw-bold">Secure My Free Copy</button>
+            </form>
+            <button class="btn btn-link text-muted small" onclick="document.getElementById('exit-intent-modal').classList.remove('active')">I'll pass on mastery</button>
+        </div>
+    </div>
+
 
 	<a href="#" id="back-to-top" class="back-to-top btn btn-gold rounded-circle shadow-lg" style="display: none; position: fixed; bottom: 40px; right: 40px; z-index: 100; width: 60px; height: 60px; align-items: center; justify-content: center;">
 		<i class="fas fa-chevron-up"></i>
