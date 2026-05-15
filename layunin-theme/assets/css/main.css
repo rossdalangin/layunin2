@@ -1071,54 +1071,78 @@ body.dark-mode .newsletter-form input.form-control::placeholder {
     text-align: center;
 }
 
-/* --- VERSION 10.4 MOBILE UI FIXES --- */
+/* --- VERSION 10.5 VISIBILITY UPGRADE --- */
 .site-header {
-    z-index: 2050 !important; /* Ensure header is above other components but below overlays */
+    height: 80px !important;
+    display: flex;
+    align-items: center;
+    z-index: 2050 !important;
 }
 
 .menu-toggle {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    z-index: 2060;
-    position: relative;
+    width: 48px;
+    height: 48px;
+    background: rgba(197, 160, 43, 0.15) !important;
+    border: 2px solid var(--brand-gold) !important;
+    border-radius: 12px !important;
+    color: var(--brand-gold) !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 12px rgba(197, 160, 43, 0.2);
 }
 
-.mobile-featured-product {
-    overflow: visible !important; /* Allow decorative elements to bleed out if designed */
-}
-
-.mobile-featured-product::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 100px;
-    height: 100px;
-    background: var(--brand-gold);
-    opacity: 0.1;
-    border-radius: 50%;
-    z-index: 0;
-}
-
-/* Ensure hamburger icon is visible */
 .menu-toggle i {
-    font-size: 1.5rem;
-    color: var(--text-navy);
+    font-size: 1.4rem !important;
+    color: var(--brand-gold) !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+body.dark-mode .menu-toggle {
+    background: rgba(197, 160, 43, 0.1) !important;
+    border-color: var(--brand-gold) !important;
 }
 
 body.dark-mode .menu-toggle i {
-    color: #FFFFFF;
+    color: var(--brand-gold) !important;
+}
+
+.menu-toggle:hover {
+    background: var(--brand-gold) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(197, 160, 43, 0.3);
+}
+
+.menu-toggle:hover i {
+    color: var(--brand-navy) !important;
+}
+
+@media (max-width: 991.98px) {
+    .site-header {
+        top: 44px !important;
+    }
 }
 
 .mobile-featured-product {
+    position: relative;
+    overflow: visible !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid var(--border-color) !important;
     transition: transform 0.3s ease;
 }
 
-.mobile-featured-product:active {
-    transform: scale(0.98);
+.mobile-featured-product::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    background: var(--brand-gold);
+    opacity: 0.15;
+    border-radius: 50%;
+    z-index: -1;
 }

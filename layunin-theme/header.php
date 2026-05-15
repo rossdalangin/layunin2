@@ -69,7 +69,7 @@
     </div>
     <?php endif; ?>
 
-	<header id="masthead" class="site-header fixed-top" style="<?php echo (get_theme_mod('show_announcement', true)) ? 'top: 44px;' : 'top: 0;'; ?>">
+	<header id="masthead" class="site-header fixed-top" style="<?php echo (get_theme_mod('show_announcement', true)) ? 'top: 46px;' : 'top: 0;'; ?>">
 		<div class="container h-100">
 			<div class="header-inner d-flex align-items-center justify-content-between h-100">
 
@@ -277,4 +277,4 @@
         </div>
     <?php endif; ?>
 
-    <div class="header-spacer" style="height: <?php echo (get_theme_mod('show_announcement', true)) ? '110px' : '70px'; ?>;"></div>
+    <div class="header-spacer" style="height: <?php echo (get_theme_mod('show_announcement', true)) ? '126px' : '80px'; ?>;"></div>
