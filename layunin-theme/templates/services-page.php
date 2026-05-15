@@ -11,6 +11,10 @@ get_header(); ?>
 		</header>
 
 		<div class="entry-content animate-up">
+			<div class="services-intro text-center mb-phi mx-auto" style="max-width: 800px;">
+				<p class="lead text-muted">We provide more than just advice. We deliver the architectural frameworks and execution systems required for world-class results in the digital economy.</p>
+			</div>
+
 			<div class="pricing-table-wrapper pricing-card-wrapper row justify-content-center mt-phi">
 				<?php for($i = 1; $i <= 3; $i++) :
 					$title = get_theme_mod("services_tier_{$i}_title", ($i==1?'Strategy':($i==2?'Mastery':'Architect')));
@@ -36,10 +40,35 @@ get_header(); ?>
 				<?php endfor; ?>
 			</div>
 
-			<div class="mt-phi p-5 bg-navy text-white rounded-4 text-center">
-				<h2 class="h3 fw-bold mb-phi-l text-white services-custom-title"><?php echo esc_html(get_theme_mod('services_custom_title', 'Need a Custom Solution?')); ?></h2>
-				<p class="text-white-50 mb-phi-l mx-auto services-custom-desc" style="max-width: 600px;"><?php echo esc_html(get_theme_mod('services_custom_desc', 'For large scale operations and international firms, we offer bespoke architectural consulting tailored to your specific mastery goals.')); ?></p>
-				<a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn-gold btn-lg px-5 services-custom-btn"><?php echo esc_html(get_theme_mod('services_custom_btn', 'Initiate Consultation')); ?></a>
+			<div class="elite-process-section mt-phi py-phi border-top">
+				<h2 class="display-4 fw-bold text-navy text-center mb-phi">The Elite Implementation Process</h2>
+				<div class="row g-4 mt-4">
+					<?php
+					$steps = array(
+						array('icon' => 'fa-magnifying-glass-chart', 'title' => 'Diagnostic Audit', 'desc' => 'We begin with a deep-dive audit of your current systems, goals, and bottlenecks.'),
+						array('icon' => 'fa-drafting-compass', 'title' => 'Architecture Design', 'desc' => 'We design a bespoke strategic roadmap tailored to your specific objective.'),
+						array('icon' => 'fa-bolt-lightning', 'title' => 'Rapid Deployment', 'desc' => 'Implementation of AI workflows and productivity frameworks for immediate impact.'),
+						array('icon' => 'fa-chart-line-up', 'title' => 'Scaling & Optimization', 'desc' => 'Continuous refinement to ensure long-term mastery and maximum ROI.')
+					);
+					foreach($steps as $step) : ?>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="process-icon mb-phi-s">
+							<div class="bg-light text-accent rounded-circle d-flex align-items-center justify-content-center mx-auto shadow-sm" style="width: 80px; height: 80px;">
+								<i class="fas <?php echo $step['icon']; ?> fa-2x"></i>
+							</div>
+						</div>
+						<h3 class="h5 fw-bold text-navy mb-2"><?php echo $step['title']; ?></h3>
+						<p class="small text-muted px-2"><?php echo $step['desc']; ?></p>
+					</div>
+					<?php endforeach; ?>
+				</div>
+			</div>
+
+			<div class="mt-phi p-5 bg-deep text-white rounded-4 text-center shadow-premium position-relative overflow-hidden">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gold opacity-5" style="background: radial-gradient(circle at center, var(--gold) 0%, transparent 70%);"></div>
+				<h2 class="h3 fw-bold mb-phi-l text-white services-custom-title position-relative z-index-1"><?php echo esc_html(get_theme_mod('services_custom_title', 'Need a Custom Solution?')); ?></h2>
+				<p class="text-white-50 mb-phi-l mx-auto services-custom-desc position-relative z-index-1" style="max-width: 600px;"><?php echo esc_html(get_theme_mod('services_custom_desc', 'For large scale operations and international firms, we offer bespoke architectural consulting tailored to your specific mastery goals.')); ?></p>
+				<a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn-gold btn-lg px-5 services-custom-btn position-relative z-index-1"><?php echo esc_html(get_theme_mod('services_custom_btn', 'Initiate Consultation')); ?></a>
 			</div>
 		</div>
 	</div>

@@ -11,7 +11,7 @@ get_header(); ?>
             <p class="lead text-muted mx-auto fs-4" style="max-width: 800px;"><?php echo esc_html( get_theme_mod( 'about_lead', 'Layunin was built on a single, uncompromising principle: that every Filipino has the potential to achieve world-class excellence when equipped with the right systems.' ) ); ?></p>
 		</header>
 
-		<div class="row g-phi align-items-center mb-phi">
+		<div class="row g-phi align-items-center mb-phi-l">
             <div class="col-lg-6 animate-up">
                 <div class="entry-content fs-5 lh-lg">
                     <h2 class="display-6 fw-bold text-navy mb-phi-l about-mission-title"><?php echo esc_html(get_theme_mod('about_mission_title', 'Our Elite Mission')); ?></h2>
@@ -33,7 +33,7 @@ get_header(); ?>
                         ?>
                         <img src="<?php echo esc_url($visual); ?>" class="w-100 h-100 object-fit-cover" alt="Elite Strategy Team">
                     </div>
-                    <div class="floating-stat glass p-4 rounded-4 position-absolute top-0 start-0 m-4 animate-float shadow-lg">
+                    <div class="floating-stat glass p-4 rounded-4 shadow-lg border position-absolute top-0 start-0 m-4 animate-float shadow-lg">
                         <div class="h3 fw-bold text-navy mb-0 about-stat-number"><?php echo esc_html(get_theme_mod('about_stat_number', '25k+')); ?></div>
                         <div class="small text-muted fw-bold about-stat-text"><?php echo esc_html(get_theme_mod('about_stat_text', 'High Achievers')); ?></div>
                     </div>

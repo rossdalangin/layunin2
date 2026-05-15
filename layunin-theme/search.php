@@ -10,26 +10,33 @@
 			<div class="accent-line mx-auto" style="width: 80px; height: 4px; background: var(--gold);"></div>
 		</header>
 
-		<div class="row g-4">
-			<?php
-			if ( have_posts() ) :
-				while ( have_posts() ) :
-					the_post();
-					get_template_part( 'template-parts/content', 'search' );
-				endwhile;
+		<div class="row">
+			<div class="col-lg-8">
+				<?php
+				if ( have_posts() ) :
+					echo '<div class="row g-4">';
+					while ( have_posts() ) :
+						the_post();
+						get_template_part( 'template-parts/content', 'search' );
+					endwhile;
+					echo '</div>';
 
-                $older_label = get_theme_mod('archive_older_label', 'Previous Strategies');
-                $newer_label = get_theme_mod('archive_newer_label', 'Recent Strategics');
-				the_posts_navigation( array(
-					'prev_text' => '<i class="fas fa-arrow-left me-2"></i> <span class="archive-older-label">' . esc_html($older_label) . '</span>',
-					'next_text' => '<span class="archive-newer-label">' . esc_html($newer_label) . '</span> <i class="fas fa-arrow-right ms-2"></i>',
-					'class' => 'posts-navigation d-flex justify-content-center gap-4 mt-phi'
-				) );
+					$older_label = get_theme_mod('archive_older_label', 'Previous Strategies');
+					$newer_label = get_theme_mod('archive_newer_label', 'Recent Strategies');
+					the_posts_navigation( array(
+						'prev_text' => '<i class="fas fa-arrow-left me-2"></i> <span class="archive-older-label">' . esc_html($older_label) . '</span>',
+						'next_text' => '<span class="archive-newer-label">' . esc_html($newer_label) . '</span> <i class="fas fa-arrow-right ms-2"></i>',
+						'class' => 'posts-navigation d-flex justify-content-center gap-4 mt-phi'
+					) );
 
-			else :
-				get_template_part( 'template-parts/content', 'none' );
-			endif;
-			?>
+				else :
+					get_template_part( 'template-parts/content', 'none' );
+				endif;
+				?>
+			</div>
+			<div class="col-lg-4">
+				<?php get_sidebar(); ?>
+			</div>
 		</div>
 	</div>
 </main>

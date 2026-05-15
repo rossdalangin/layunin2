@@ -12,14 +12,39 @@ get_header(); ?>
 		</header>
 
 		<div class="row g-4">
-			<?php for($i = 1; $i <= 6; $i++) :
-				$title = get_theme_mod("shop_item_{$i}_title", 'Elite Framework ' . $i);
-				$price = get_theme_mod("shop_item_{$i}_price", '&#8369;2,499');
+			<?php
+
+			$prod_specs = array(
+				1 => array("Purpose Audit", "Macro-to-Micro Engine", "Environment Design", "Network Architecture"),
+				2 => array("RCT Prompt Engineering", "AI Exoskeleton Stack", "Service Arbitrage", "Custom GPT Development"),
+				3 => array("Niche Matrix Analysis", "Automated Value Ladders", "Psychological Copywriting", "Omnipresence Marketing"),
+				4 => array("Radical Responsibility", "The Stoic Filter", "Pareto Decision Making", "The Flow State Protocol"),
+				5 => array("Empire Account Structure", "Asset Allocation Logic", "Tax & Entity Strategy", "Legacy Transmission"),
+				6 => array("Energy Mapping (BPE)", "The Distraction Shield", "Sunday Sprint Planning", "The Digital Sunset")
+			);
+
+
+			$theme_uri = get_template_directory_uri();
+			$prods = array(
+                1 => array('title' => 'The Elite Architect Manual', 'price' => '&#8369;1,499', 'link' => $theme_uri . '/downloadables/1_THE_ELITE_ARCHITECT_MANUAL.docx'),
+                2 => array('title' => 'AI Revenue Exponential', 'price' => '&#8369;2,999', 'link' => $theme_uri . '/downloadables/2_AI_REVENUE_EXPONENTIAL.docx'),
+                3 => array('title' => 'Digital Asset Empire', 'price' => '&#8369;4,999', 'link' => $theme_uri . '/downloadables/3_DIGITAL_ASSET_EMPIRE.docx'),
+                4 => array('title' => 'The Elite Mindset Matrix', 'price' => '&#8369;1,999', 'link' => $theme_uri . '/downloadables/4_THE_ELITE_MINDSET_MATRIX.docx'),
+                5 => array('title' => 'Wealth Architect Protocols', 'price' => '&#8369;3,499', 'link' => $theme_uri . '/downloadables/5_WEALTH_ARCHITECT_PROTOCOLS.docx'),
+                6 => array('title' => 'The Ultimate Productivity Vault', 'price' => '&#8369;5,999', 'link' => $theme_uri . '/downloadables/6_THE_ULTIMATE_PRODUCTIVITY_VAULT.docx')
+            );
+			for($i = 1; $i <= 6; $i++) :
+				$current_modules = $prod_specs[$i];
+				$title = get_theme_mod("shop_item_{$i}_title", $prods[$i]['title']);
+				$price = get_theme_mod("shop_item_{$i}_price", $prods[$i]['price']);
 				$image = get_theme_mod("shop_item_{$i}_image", 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=400');
-				$link = get_theme_mod("shop_item_{$i}_link", "#");
+				$link = get_theme_mod("shop_item_{$i}_link", $prods[$i]['link']);
 			?>
 			<div class="col-lg-4 col-md-6 animate-up product-item" style="animation-delay: <?php echo 0.05 * $i; ?>s;">
 				<div class="product-card card h-100 border-0 shadow-sm overflow-hidden transition-all hover-lift">
+					<?php if($i == 1) : ?>
+						<div class="exclusive-badge position-absolute top-0 start-0 bg-gold text-navy fw-bold small px-4 py-1" style="z-index: 10; transform: rotate(-45deg) translate(-30px, -15px); width: 150px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">MASTERPIECE</div>
+					<?php endif; ?>
 					<div class="product-image position-relative">
 						<img src="<?php echo esc_url($image); ?>" class="card-img-top" alt="<?php echo esc_attr($title); ?>">
 						<div class="product-overlay position-absolute top-0 start-0 w-100 h-100 bg-navy bg-opacity-10 d-flex align-items-center justify-content-center opacity-0 transition-all hover-opacity-100">
@@ -31,10 +56,23 @@ get_header(); ?>
 							<span class="badge bg-light text-navy small shop-item-badge"><?php echo esc_html(get_theme_mod('shop_item_badge', 'Digital Resource')); ?></span>
 							<span class="text-accent fw-bold item-price"><?php echo $price; ?></span>
 						</div>
-						<h3 class="h5 fw-bold text-navy mb-0 item-title"><?php echo esc_html($title); ?></h3>
+						<h3 class="h5 fw-bold text-navy mb-3 item-title"><?php echo esc_html($title); ?></h3>
+
+						<div class="strategic-preview mb-4">
+							<span class="text-uppercase x-small fw-bold text-muted letter-spacing-1 d-block mb-2">Core Strategic Modules:</span>
+							<ul class="list-unstyled small text-muted mb-0">
+								<?php
+								$custom_mods = get_theme_mod("shop_item_{$i}_modules");
+								$display_mods = !empty($custom_mods) ? explode(',', $custom_mods) : $current_modules;
+								foreach($display_mods as $mod) : ?>
+								<li><i class="fas fa-check-circle text-gold me-2"></i> <?php echo esc_html(trim($mod)); ?></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+
 					</div>
 					<div class="card-footer bg-white border-0 p-4 pt-0">
-						<a href="<?php echo esc_url($link); ?>" class="btn btn-navy btn-sm w-100 py-2 shop-btn-text"><?php echo esc_html(get_theme_mod('shop_btn_text', 'Add to Cart')); ?> <i class="fas fa-shopping-cart ms-2"></i></a>
+						<a href="<?php echo esc_url($link); ?>" class="btn btn-navy btn-sm w-100 py-2 shop-btn-text" download><?php echo esc_html(get_theme_mod('shop_btn_text', 'Download Masterpiece')); ?> <i class="fas fa-download ms-2"></i></a>
 					</div>
 				</div>
 			</div>

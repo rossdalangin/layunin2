@@ -15,8 +15,16 @@ $col_class = ($layout == 'list') ? 'col-12 mb-phi' : 'col-lg-4 col-md-6 mb-phi-l
 				<!-- Thumb already shown above in card-based but for list let's adjust if needed -->
 			<?php endif; ?>
 			<div class="content-inner w-100">
-			<div class="entry-meta small text-accent text-uppercase fw-bold mb-2">
-				<?php the_category(', '); ?>
+			<div class="entry-meta mb-3">
+				<?php
+				$categories = get_the_category();
+				if ( ! empty( $categories ) ) {
+					foreach( $categories as $category ) {
+						$cat_id = $category->slug;
+						echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge bg-cat-' . esc_attr( $cat_id ) . ' text-white text-uppercase px-3 py-2 rounded-pill me-1 small fw-bold text-decoration-none">' . esc_html( $category->name ) . '</a>';
+					}
+				}
+				?>
 			</div>
 			<header class="entry-header">
 				<?php the_title( '<h2 class="entry-title h5 mb-phi-s"><a class="text-navy text-decoration-none" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>

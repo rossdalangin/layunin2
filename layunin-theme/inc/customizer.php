@@ -276,7 +276,7 @@ function layunin_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'testimonials_home_title', array( 'label' => 'Title', 'section' => 'layunin_home_testimonials' ) );
     $wp_customize->add_setting( 'testimonials_home_lead', array( 'default' => 'Our framework has been battle-tested by thousands of Filipinos across the globe. Here is one of our most recent success stories.', 'sanitize_callback' => 'sanitize_textarea_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'testimonials_home_lead', array( 'label' => 'Section Lead', 'section' => 'layunin_home_testimonials', 'type' => 'textarea' ) );
-    
+
 	$wp_customize->add_setting( 'testimonial_quote', array( 'default' => 'The systems I learned through Layunin didn\'t just increase my income; they gave me my life back. I finally feel like I\'m living my true "Layunin".', 'sanitize_callback' => 'sanitize_textarea_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'testimonial_quote', array( 'label' => 'Main Quote', 'section' => 'layunin_home_testimonials', 'type' => 'textarea' ) );
 	$wp_customize->add_setting( 'testimonial_author', array( 'default' => 'Dr. Katrina Reyes', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
@@ -363,7 +363,7 @@ function layunin_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'monetization_newsletter_desc', array( 'label' => 'Widget Newsletter Desc', 'section' => 'layunin_monetization' ) );
     $wp_customize->add_setting( 'monetization_newsletter_ph', array( 'default' => 'Email', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'monetization_newsletter_ph', array( 'label' => 'Newsletter Placeholder', 'section' => 'layunin_monetization' ) );
-    
+
     $wp_customize->add_setting( 'product_item_1_title', array( 'default' => 'The Ultimate Goal Planner', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
 	$wp_customize->add_control( 'product_item_1_title', array( 'label' => 'Offer Title', 'section' => 'layunin_monetization' ) );
     $wp_customize->add_setting( 'product_item_1_price', array( 'default' => '&#8369;999', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
@@ -445,7 +445,7 @@ function layunin_customize_register( $wp_customize ) {
 	foreach ( $pages as $id ) {
 		$label = ucfirst(str_replace('_', ' ', $id)) . ' Page';
 		$wp_customize->add_section( "layunin_page_{$id}", array( 'title' => $label, 'panel' => 'layunin_pages_panel' ) );
-		
+
         if($id == 'search_404') {
             $wp_customize->add_setting( 'error_404_title', array( 'default' => 'Even Masters Get Lost.', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'error_404_title', array( 'label' => '404 Headline', 'section' => "layunin_page_{$id}" ) );
@@ -591,7 +591,7 @@ function layunin_customize_register( $wp_customize ) {
             $wp_customize->add_control( 'shop_btn_text', array( 'label' => 'Add to Cart Button Text', 'section' => "layunin_page_{$id}" ) );
             $wp_customize->add_setting( 'shop_view_btn', array( 'default' => 'View Details', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'shop_view_btn', array( 'label' => 'View Details Button Text', 'section' => "layunin_page_{$id}" ) );
-            
+
             $wp_customize->add_setting( 'shop_newsletter_title', array( 'default' => 'Want Exclusive Discounts?', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'shop_newsletter_title', array( 'label' => 'Newsletter Title', 'section' => "layunin_page_{$id}" ) );
             $wp_customize->add_setting( 'shop_newsletter_desc', array( 'default' => 'Join our community and get 20% off your first digital product purchase.', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
@@ -618,7 +618,7 @@ function layunin_customize_register( $wp_customize ) {
             $wp_customize->add_control( 'free_resources_badge', array( 'label' => 'Top Badge Text', 'section' => "layunin_page_{$id}" ) );
             $wp_customize->add_setting( 'free_resources_content', array( 'default' => 'Start your journey with our complimentary high-output guides and frameworks.', 'sanitize_callback' => 'sanitize_textarea_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'free_resources_content', array( 'label' => 'Resources Description', 'section' => "layunin_page_{$id}", 'type' => 'textarea' ) );
-            
+
             $wp_customize->add_setting( 'resources_cta_title', array( 'default' => 'Looking for more?', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
             $wp_customize->add_control( 'resources_cta_title', array( 'label' => 'CTA Title', 'section' => "layunin_page_{$id}" ) );
             $wp_customize->add_setting( 'resources_cta_desc', array( 'default' => 'Our Success Library is updated monthly with new tools for the community. Subscribe to be the first to know when we release new high-value resources.', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ) );
@@ -772,6 +772,21 @@ function layunin_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'layunin_automation', array( 'title' => 'Master Setup', 'priority' => 100 ) );
 	$wp_customize->add_setting( 'recreate_pages_trigger', array( 'default' => false, 'sanitize_callback' => 'layunin_sanitize_checkbox' ) );
 	$wp_customize->add_control( 'recreate_pages_trigger', array( 'label' => 'Initialize Elite Site Ecosystem', 'section' => 'layunin_automation', 'type' => 'checkbox' ) );
+
+	// --- 4. SHOP PAGE SETTINGS ---
+	$wp_customize->add_section( 'layunin_page_shop', array( 'title' => 'Shop Page Settings', 'priority' => 40 ) );
+    for($i = 1; $i <= 6; $i++) {
+        $wp_customize->add_setting( "shop_item_{$i}_title", array( 'default' => '', 'sanitize_callback' => 'sanitize_text_field' ) );
+        $wp_customize->add_control( "shop_item_{$i}_title", array( 'label' => "Product $i Title", 'section' => "layunin_page_shop" ) );
+        $wp_customize->add_setting( "shop_item_{$i}_price", array( 'default' => '', 'sanitize_callback' => 'sanitize_text_field' ) );
+        $wp_customize->add_control( "shop_item_{$i}_price", array( 'label' => "Product $i Price", 'section' => "layunin_page_shop" ) );
+        $wp_customize->add_setting( "shop_item_{$i}_link", array( 'default' => '', 'sanitize_callback' => 'esc_url_raw' ) );
+        $wp_customize->add_control( "shop_item_{$i}_link", array( 'label' => "Product $i Link", 'section' => "layunin_page_shop" ) );
+        $wp_customize->add_setting( "shop_item_{$i}_modules", array( 'default' => '', 'sanitize_callback' => 'sanitize_text_field' ) );
+        $wp_customize->add_control( "shop_item_{$i}_modules", array( 'label' => "Product $i Modules (comma separated)", 'section' => "layunin_page_shop" ) );
+        $wp_customize->add_setting( "shop_item_{$i}_image", array( 'default' => '', 'sanitize_callback' => 'esc_url_raw' ) );
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, "shop_item_{$i}_image", array( 'label' => "Product $i Image", 'section' => "layunin_page_shop" ) ) );
+    }
 }
 add_action( 'customize_register', 'layunin_customize_register' );
 

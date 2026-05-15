@@ -155,3 +155,28 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/cpt.php';
 require get_template_directory() . '/inc/seo.php';
 require get_template_directory() . '/inc/page-creator.php';
+
+/**
+ * [layunin_gate] Shortcode
+ * Gates content for registered users only.
+ */
+function layunin_content_gate_shortcode( $atts, $content = null ) {
+    if ( is_user_logged_in() && !is_null( $content ) && !is_feed() ) {
+        return do_shortcode( $content );
+    }
+
+    $login_url = wp_login_url( get_permalink() );
+    $register_url = wp_registration_url();
+
+    $gate_html = '<div class="layunin-gate-overlay p-5 text-center bg-light rounded-4 border my-5 shadow-sm">';
+    $gate_html .= '<i class="fas fa-lock fa-3x text-gold mb-4"></i>';
+    $gate_html .= '<h3 class="fw-bold text-navy mb-3">Architects Only</h3>';
+    $gate_html .= '<p class="text-muted mb-4">This strategic module is reserved for registered members of the Layunin ecosystem.</p>';
+    $gate_html .= '<div class="d-flex justify-content-center gap-3">';
+    $gate_html .= '<a href="' . esc_url( $login_url ) . '" class="btn btn-navy px-4">Log In</a>';
+    $gate_html .= '<a href="' . esc_url( $register_url ) . '" class="btn btn-gold px-4">Initiate Access</a>';
+    $gate_html .= '</div></div>';
+
+    return $gate_html;
+}
+add_shortcode( 'layunin_gate', 'layunin_content_gate_shortcode' );
