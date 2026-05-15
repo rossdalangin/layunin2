@@ -1,5 +1,5 @@
 /**
- * Layunin Masterpiece Navigation (v10.3)
+ * Layunin Masterpiece Navigation (v10.4)
  * Comprehensive Elite Interaction Engine
  */
 document.addEventListener('DOMContentLoaded', function() {

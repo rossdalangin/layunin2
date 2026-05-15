@@ -1070,3 +1070,55 @@ body.dark-mode .newsletter-form input.form-control::placeholder {
     border-radius: var(--radius-md);
     text-align: center;
 }
+
+/* --- VERSION 10.4 MOBILE UI FIXES --- */
+.site-header {
+    z-index: 2050 !important; /* Ensure header is above other components but below overlays */
+}
+
+.menu-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    z-index: 2060;
+    position: relative;
+}
+
+.mobile-featured-product {
+    overflow: visible !important; /* Allow decorative elements to bleed out if designed */
+}
+
+.mobile-featured-product::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: var(--brand-gold);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Ensure hamburger icon is visible */
+.menu-toggle i {
+    font-size: 1.5rem;
+    color: var(--text-navy);
+}
+
+body.dark-mode .menu-toggle i {
+    color: #FFFFFF;
+}
+
+.mobile-featured-product {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color) !important;
+    transition: transform 0.3s ease;
+}
+
+.mobile-featured-product:active {
+    transform: scale(0.98);
+}

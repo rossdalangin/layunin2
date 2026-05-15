@@ -200,7 +200,7 @@
             </div>
 
             <!-- Featured Product in Mobile Menu -->
-            <div id="mobile-featured-card" class="mobile-featured-product mb-5 p-4 rounded-4 bg-light border position-relative overflow-hidden">
+            <div id="mobile-featured-card" class="mobile-featured-product mb-5 p-4 rounded-4 bg-light border position-relative">
                 <div class="position-absolute top-0 end-0 p-3 opacity-10"><i class="fas fa-crown fa-3x"></i></div>
                 <div class="position-relative z-1">
                     <span class="badge bg-gold text-navy mb-3 small fw-bold text-uppercase letter-spacing-1">Premium Blueprint</span>
