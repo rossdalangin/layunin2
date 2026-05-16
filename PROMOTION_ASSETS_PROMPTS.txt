@@ -1,0 +1,79 @@
+🏛️ LAYUNIN.COM: ULTIMATE ASSET GENERATION PROMPTS (V1.0)
+================================================================
+
+This document contains the highest-fidelity prompts for generating the
+visual and cinematic DNA of the Layunin brand.
+
+1. THE FLAGSHIP LOGO: "THE ARCHITECT'S MARK"
+----------------------------------------------------------------
+PROMPT (Midjourney/DALL-E 3):
+"A minimalist, ultra-premium professional logo for a brand called
+'Layunin'. The design should feature a geometric abstract symbol
+representing a stylized compass combined with a Greek architectural
+pillar. Vector art, clean lines, high symmetry. Primary color: Deep
+Navy (#050A18), Secondary color: Elite Burnished Gold. White
+background. Professional, authoritative, timeless. 8k resolution,
+high-end luxury brand aesthetic."
+
+VARIANT (Monogram):
+"A sophisticated letter 'L' logo for 'Layunin.com'. The 'L' is
+constructed using architectural blueprint lines and golden ratio
+curves. Elegant, minimalist, luxury serif typography. Deep navy and
+gold gradient. Flat design, high contrast."
+
+2. PROMOTIONAL IMAGE PROMPTS: "SCENES OF MASTERY"
+----------------------------------------------------------------
+IMAGE 1: THE ELITE WORKSPACE
+"Cinematic wide shot of a modern, ultra-minimalist executive
+office at night overlooking the skyline of BGC, Taguig. A high-end
+laptop is open on a walnut desk showing a complex strategic
+blueprint. Subtle warm gold lighting, deep navy shadows.
+Atmosphere of calm focus and absolute authority. Shot on 35mm
+lens, f/1.8, highly detailed, photorealistic."
+
+IMAGE 2: THE AI ARCHITECT (CONCEPTUAL)
+"A professional Filipino man in his 30s, looking visionary and
+calm, wearing a sharp tailored suit. Behind him, a holographic
+geometric display of golden ratio grids and AI data nodes
+intertwining with architectural sketches. Luxury aesthetic,
+clean, sharp focus. 8k, Unreal Engine 5 render style."
+
+IMAGE 3: THE STRATEGIC VAULT (PRODUCT MOCKUP)
+"A collection of 6 premium leather-bound manuals placed on a marble
+table, titled 'The Elite Architect', 'Wealth Protocols', etc. A
+golden fountain pen lies next to them. Soft morning light, luxury
+resort vibes. Representing high-ticket digital assets. Highly
+detailed, professional product photography."
+
+3. PROMOTIONAL VIDEO PROMPTS: "THE ASCENSION"
+----------------------------------------------------------------
+VIDEO 1: THE BRAND REVEAL (5-10 Seconds)
+"Cinematic macro shot of golden liquid metal flowing into the shape
+of the Layunin logo. The background is a dark, textured navy stone.
+Slow motion, epic lighting, dust particles in the air. Ending with
+a sharp focus on the text 'LAYUNIN.COM: ARCHITECT YOUR FUTURE'."
+
+VIDEO 2: THE PROBLEM VS. SOLUTION (Social Ad)
+"Fast-paced cinematic montage. Start with blurry, chaotic shots of
+city traffic and stressed faces (B&W). Transition to a sharp,
+color-graded high-fidelity sequence: an architect drawing a single
+perfect line, a hand clicking 'Register', and a person standing
+calmly on a high-rise balcony. Text overlay: 'Stop Hustling. Start
+Architecting.' 4k, 60fps."
+
+VIDEO 3: THE VAULT TEASER
+"A 3D fly-through of a digital library. The walls are made of light
+and data. Glowing gold modules labeled 'AI Revenue', 'Mindset Matrix',
+and 'Productivity Vault' float in the air. The camera moves towards
+a bright light at the end of the hall. High-tech, futuristic, but
+grounded in luxury."
+
+4. COLOR CODES & DESIGN STANDARDS
+----------------------------------------------------------------
+- PRIMARY NAVY: #050A18
+- ELITE GOLD: #C5A02B
+- ACCENT WHITE: #F8F9FA
+- TYPOGRAPHY: Playfair Display (Headings) / Inter (Body)
+
+================================================================
+"IF IT LOOKS AVERAGE, IT IS NOT LAYUNIN."
