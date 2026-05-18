@@ -1146,3 +1146,55 @@ body.dark-mode .menu-toggle i {
     border-radius: 50%;
     z-index: -1;
 }
+
+/* --- VERSION 10.6 CONTENT DISPLAY FIX --- */
+.entry-content {
+    max-height: none !important;
+    overflow: visible !important;
+    display: block !important;
+    clear: both;
+}
+
+.entry-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure images in content don't overflow */
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- VERSION 10.6 CONTENT DISPLAY FIX --- */
+.entry-content {
+    max-height: none !important;
+    overflow: visible !important;
+    display: block !important;
+    clear: both;
+    visibility: visible !important; /* Force visibility just in case */
+    opacity: 1 !important; /* Force opacity just in case */
+}
+
+/* Page Links Styling */
+.page-links {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+}
+.page-links .post-page-numbers {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--text-navy);
+}
+.page-links .post-page-numbers.current {
+    background: var(--brand-gold);
+    color: var(--brand-navy);
+    border-color: var(--brand-gold);
+}
