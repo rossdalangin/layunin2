@@ -2,7 +2,7 @@
 
 <main id="primary" class="site-main py-phi bg-light">
 	<div class="container">
-		<header class="page-header text-center mb-phi animate-up">
+		<header class="page-header text-center mb-phi">
 			<h1 class="display-3 fw-black text-navy mb-phi-s search-results-title">
 				<?php echo esc_html(get_theme_mod('search_results_title', 'Strategic Results for:')); ?> 
                 <span class="text-gold">"<?php echo get_search_query(); ?>"</span>

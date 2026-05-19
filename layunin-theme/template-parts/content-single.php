@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('animate-up'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header mb-phi text-center">
 		<div class="entry-meta mb-phi-s">
 			<?php

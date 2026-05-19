@@ -1,7 +1,7 @@
 <?php $layout = get_theme_mod( 'blog_layout', 'grid' );
 $col_class = ($layout == 'list') ? 'col-12 mb-phi' : 'col-lg-4 col-md-6 mb-phi-l';
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( $col_class . ' animate-up' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $col_class ); ?>>
 	<div class="card h-100 shadow-sm border-0 overflow-hidden p-0">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="post-thumbnail overflow-hidden">

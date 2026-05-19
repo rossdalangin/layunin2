@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main id="primary" class="site-main py-phi bg-light">
 	<div class="container">
-		<header class="archive-header text-center mb-phi animate-up">
+		<header class="archive-header text-center mb-phi">
 			<span class="text-accent text-uppercase fw-bold letter-spacing-2 mb-2 d-block archive-title-prefix"><?php echo esc_html(get_theme_mod('archive_title_prefix', 'Mastering:')); ?></span>
 			<h1 class="display-3 fw-black text-navy mb-phi-s">
 				<?php
